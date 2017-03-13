@@ -39,93 +39,66 @@
             <div class="text-center">
                 <a target="_blank" href="http://mines.gov.gn/"><h1>Ministère des Mines</h1></a>
             </div>
-
-         <!--   <div><br></div>-->
-            
              <div class="alert alert-info sideColor">
-                 
-                 <!--Date-->
-<!--
-                <h4 class="info-box-number white"><i class="icon fa fa-calendar fa-1x"></i>Date</h4>
-                  <div class="form-control">
-                        <select id='d' name='day' onload="changeDay(this);" onchange="changeDay(this);triggerUiUpdate();"></select>&nbsp;&nbsp;
-                        <select id='m' name='month' onload="changeMonth(this);" onchange="changeMonth(this);triggerUiUpdate();"></select>&nbsp;
-                        <select id='y' name='year' onload="changeYear(this);" onchange="changeYear(this); triggerUiUpdate();"></select>
-                  </div>
--->
-                 <!--Region DropDown-->
-                 <br>
-                 <h4 class="info-box-number white"><i class="icon fa fa-globe fa-1x"></i>Région</h4>
+                 <h4 class="info-box-number white"><i class="icon fa fa-globe fa-1x"></i>State</h4>
                       <div class="form-group-sm">
-                        <select id="region_scope" onchange="getAdminLayers(); triggerUiUpdate();" class="form-control">
+                        <select name="state_scope" id="state_scope" onChange="changecat(this.value); " class="form-control">
+<!--                            getAdminLayers(); triggerUiUpdate();-->
                             <option value="">All</option>
-                            <option value="Boke" id="region1" class="boke">Boke</option>
-                            <option value="Conakry" id="region2" class="conakry">Conakry</option>
-                            <option value="Faranah" id="region3" class="faranah">Faranah</option>
-                            <option value="Kankan" id="region4" class="kankan">Kankan</option>
-                            <option value="Kindia" id="region5" class="kindia">Kindia</option>
-                            <option value="Labe" id="region6" class="labe">Labe</option>
-                            <option value="Mamou" id="region7" class="mamou">Mamou</option>
-                            <option value="Nzerekore" id="region8" class="nzerekore">Nzerekore</option>
+                            <option value="Abuja">Abuja</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
+                            <option value="Akwa Ibom">AkwaIbom</option>
+                            <option value="Anambra">Anambra</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Borno">Borno</option>
+                            <option value="Cross River">CrossRiver</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Ebonyi">Ebonyi</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Ekiti">Ekiti</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Gombe">Gombe</option>
+                            <option value="Imo">Imo</option>
+                            <option value="Jigawa">Jigawa</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Katsina">Katsina</option>
+                            <option value="Kebbi">Kebbi</option>
+                            <option value="Kogi">Kogi</option>
+                            <option value="Kwara">Kwara</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Nassarawa">Nassarawa</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Ogun">Ogun</option>
+                            <option value="Ondo">Ondo</option>
+                            <option value="Osun">Osun</option>
+                            <option value="Oyo">Oyo</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="Rivers">Rivers</option>
+                            <option value="Sokoto">Sokoto</option>
+                            <option value="Taraba">Taraba</option>
+                            <option value="Yobe">Yobe</option>
+                            <option value="Zamfara">Zamfara</option>
+
                         </select>
                     </div>
 
                  <!--Prefecture DropDown-->
                  <br>
-                 <h4 class="info-box-number white" id="prefecture_id" readonly style="visibility:true"><i class="icon fa fa-globe fa-1x"></i>Préfecture</h4>
+                 <h4 class="info-box-number white" id="prefecture_id" readonly style="visibility:true"><i class="icon fa fa-globe fa-1x"></i>Local Government Area</h4>
                       <div id="prefecture_id1" class="form-group-sm" readonly style="visibility:true">
-                        <select id="prefecture_scope" onchange="getAdminLayers(); triggerUiUpdate();" class="form-control">
-<!--                            triggerUiUpdate();-->
-                            <option value="">All</option>
-                            <option value="Boffa" class="selectors boke">Boffa</option>
-                            <option value="Boke" class="selectors boke">Boke</option>
-                            <option value="Fria" class="selectors boke">Fria</option>
-                            <option value="Gaoual" class="selectors boke">Gaoual</option>
-                            <option value="Koundara" class="selectors boke">Koundara</option>
-                            <option value="" class="selectors boke">All</option>
-                            <option value="Conakry" class="selectors conakry">Conakry</option>
-                            <option value="" class="selectors conakry">All</option>
-                            <option value="Dabola" class="selectors faranah">Dabola</option>
-                            <option value="Dinguiraye" class="selectors faranah">Dinguiraye</option>
-                            <option value="Faranah" class="selectors faranah">Faranah</option>
-                            <option value="Kissidougou" class="selectors faranah">Kissidougou</option>
-                            <option value="" class="selectors faranah"></option>
-                            <option value="Kankan" class="selectors kankan">Kankan</option>
-                            <option value="Kerouana" class="selectors kankan">Kerouane</option>
-                            <option value="Kouroussa" class="selectors kankan">Kouroussa</option>
-                            <option value="Mandiana" class="selectors kankan">Mandiana</option>
-                            <option value="Siguiri" class="selectors kankan">Siguiri</option>
-                            <option value="" class="selectors kankan"></option>
-                            <option value="Coyah" class="selectors kindia">Coyah</option>
-                            <option value="Dubreka" class="selectors kindia">Dubreka</option>
-                            <option value="Forecariah" class="selectors kindia">Forecariah</option>
-                            <option value="Kindia" class="selectors kindia">Kindia</option>
-                            <option value="Telemele" class="selectors kindia">Telemele</option>
-                            <option value="" class="selectors kindia"></option>
-                            <option value="Koubia" class="selectors labe">Koubia</option>
-                            <option value="Labe" class="selectors labe">Labe</option>
-                            <option value="Lelouma" class="selectors labe">Lelouma</option>
-                            <option value="Mali" class="selectors labe">Mali</option>
-                            <option value="Tougue" class="selectors labe">Tougue</option>
-                            <option value="" class="selectors labe"></option>
-                            <option value="Dalaba" class="selectors mamou">Dalaba</option>
-                            <option value="Mamou" class="selectors mamou">Mamou</option>
-                            <option value="Pita" class="selectors mamou">Pita</option>
-                            <option value="" class="selectors mamou"></option>
-                            <option value="Beyla" class="selectors nzerekore">Beyla</option>
-                            <option value="Gueckedou" class="selectors nzerekore">Gueckedou</option>
-                            <option value="Lola" class="selectors nzerekore">Lola</option>
-                            <option value="Macenta" class="selectors nzerekore">Macenta</option>
-                            <option value="Nzerekore" class="selectors nzerekore">Nzerekore</option>
-                            <option value="Yamou" class="selectors nzerekore">Yamou</option>
-                            <option value="" class="selectors nzerekore"></option>
+                        <select name="lga_scope" id="lga_scope" onchange="getAdminLayers(); triggerUiUpdate();" class="form-control">
+                            <option value="" disabled selected>All</option>
                         </select>
                     </div>
 
                  
                  <!--Company -->
                  <br>
-                 <h4 class="info-box-number white"><i class="icon fa fa-building fa-1x"></i>Société</h4>
+                 <h4 class="info-box-number white"><i class="icon fa fa-building fa-1x"></i>Bank Name</h4>
                       <div class="form-group-sm">
                         <select id="societe_scope" onchange="triggerUiUpdate(); getAdminLayers();" class="form-control">
                             <option value="">All</option>
@@ -139,10 +112,9 @@
 
                  <!--Substance / Natural Resources-->
                  <br>
-                 <h4 class="info-box-number white"><i class="icon fa fa-diamond fa-1x"></i>Substance/Resource</h4>
+                 <h4 class="info-box-number white"><i class="icon fa fa-user fa-1x"></i>Customer Name</h4>
                       <div class="form-group-sm">
                         <select id="substance_type" onchange="triggerUiUpdate(); getAdminLayers();" class="form-control">
-
                             <option value="">All</option>
                                 <option value="Or">Or</option>
                                 <option value="Calcaire">Calcaire</option>
@@ -156,7 +128,7 @@
                  
                  <div class="text-center">
                     <span class="info-box-text white">Currently Displaying:</span>
-                    <span class="info-box-number white"><b id="country2"></b><big id="projectCount">0</big> Substance(s)  </span>
+                    <span class="info-box-number white"><b id="country2"></b><big id="projectCount">0</big> Customer(s)  </span>
             </div>
                 
             </div>
@@ -180,7 +152,7 @@
               <div class="alert sideColor">
                     <div class="box box-primary box-solid">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Resources Info</h3>
+                            <h3 class="box-title">Customer Information</h3>
                             <div class="box-tools pull-right">
                                 <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                             </div>

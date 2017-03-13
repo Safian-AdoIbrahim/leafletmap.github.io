@@ -79,13 +79,13 @@ function adjustLayerbyZoom(zoomGIN) {
 //This drives all the operation that will be rendering on the map
 function triggerUiUpdate() {
     societe = $('#societe_scope').val()
-    region = $('#region_scope').val()
-    prefecture = $('#prefecture_scope').val()
+    region = $('#state_scope').val()
+    prefecture = $('#lga_scope').val()
     substance = $('#substance_type').val()
     console.log("All Seleceted: ", societe+"  "+region+"  "+prefecture+"  "+substance+"  "+date)
     var query = buildQuery(region, prefecture, sub_prefecture, date)
     getData(query)
-    prefecture_select = $('#region_scope').val()
+    prefecture_select = $('#state_scope').val()
 }
 
 
@@ -230,8 +230,8 @@ function addAdminLayersToMap(layers) {
             }
       }
 
-    regionSelect = $('#region_scope').val()
-    prefectureSelect = $('#prefecture_scope').val()
+    regionSelect = $('#state_scope').val()
+    prefectureSelect = $('#lga_scope').val()
     guineaAdminLayer0 = L.geoJson(layers['guineaAdmin0'], {
         style: layerStyles['admin0']
     }).addTo(map)
@@ -361,38 +361,23 @@ function logError(error) {
 }
 
 
-
-//Filtering Prefecture Based on Selected Region
-$(document).ready(function () {
-    var allOptions = $('#prefecture_scope option')
-    $('#region_scope').change(function () {
-        $('#prefecture_scope option').remove()
-        var classN = $('#region_scope option:selected').prop('class');
-        var opts = allOptions.filter('.' + classN);
-        $.each(opts, function (i, j) {
-            $(j).appendTo('#prefecture_scope');
-        });
-    });
-});
-
-
-
-function showPrefecture() {
-    prefecture_show = document.getElementById("prefecture_id");
-    prefecture_show1 = document.getElementById("prefecture_id1");
-    console.log("Show: ", prefecture_show);
-    console.log("Show1: ", prefecture_show1);
-    if(prefecture_select != "") {
-         prefecture_show.style.visibility = "true"
-         prefecture_show1.style.visibility = "true"
-    }
-
-    else{
-        prefecture_show.style.visibility = "hidden"
-        prefecture_show1.style.visibility = "hidden"
-    }
-
-}
+//
+//function showPrefecture() {
+//    prefecture_show = document.getElementById("prefecture_id");
+//    prefecture_show1 = document.getElementById("prefecture_id1");
+//    console.log("Show: ", prefecture_show);
+//    console.log("Show1: ", prefecture_show1);
+//    if(prefecture_select != "") {
+//         prefecture_show.style.visibility = "true"
+//         prefecture_show1.style.visibility = "true"
+//    }
+//
+//    else{
+//        prefecture_show.style.visibility = "hidden"
+//        prefecture_show1.style.visibility = "hidden"
+//    }
+//
+//}
 
 
 
@@ -400,52 +385,54 @@ getAdminLayers()
 hideLoader()
 /*triggerUiUpdate()*/
 
-
-//For Auto Date Generation
-var monthtext=['January','February','March','April','May','June','July','August','September','October','November','December'];
-function populatedropdown(dayfield, monthfield, yearfield){
-	var today=new Date()
-	var dayfield=document.getElementById(dayfield);
-	var monthfield=document.getElementById(monthfield);
-	var yearfield=document.getElementById(yearfield);
-	for (var i=0; i<31; i++)
-		dayfield.options[i]=new Option(i+1, i+1)
-	dayfield.options[today.getDate()-1].selected=true;
-	for (var m=0; m<12; m++)
-		monthfield.options[m]=new Option(monthtext[m], monthtext[m])
-	monthfield.options[today.getMonth()].selected=true;
-	var thisyear=today.getFullYear() - 7
-	for (var y=0; y<15; y++){
-		yearfield.options[y]=new Option(thisyear, thisyear)
-		thisyear+=1
-	}
-yearfield.options[0]=new Option(today.getFullYear(), today.getFullYear(), true, true) //select today's year
+//Populating LGAs by State
+var lgasbystate = {
+    Abuja: [" ","Gwagwalada", "Kuje", "Abaji", "Abuja Municipal", "Bwari", "Kwali"],
+    Abia: [" ","Aba North", "Aba South", "Arochukwu", "Bende", "Ikwuano", "Isiala-Ngwa North", "Isiala-Ngwa South", "Isuikwato", "Obi Nwa", "Ohafia", "Osisioma", "Ngwa", "Ugwunagbo", "Ukwa East", "Ukwa West", "Umuahia North", "Umuahia South", "Umu-Neochi"],
+    Adamawa: [" ","Demsa", "Fufore", "Ganaye", "Gireri", "Gombi", "Guyuk", "Hong", "Jada", "Lamurde", "Madagali", "Maiha", "Mayo-Belwa", "Michika", "Mubi North", "Mubi South", "Numan", "Shelleng", "Song", "Toungo", "Yola North", "Yola South"],
+    AkwaIbom: [" ","Abak", "Eastern Obolo", "Eket", "Esit Eket", "Essien Udim", "Etim Ekpo", "Etinan", "Ibeno", "Ibesikpo Asutan", "Ibiono Ibom", "Ika", "Ikono", "Ikot Abasi", "Ikot Ekpene", "Ini", "Itu", "Mbo", "Mkpat Enin", "Nsit Atai", "Nsit Ibom", "Nsit Ubium", "Obot Akara", "Okobo", "Onna", "Oron", "Oruk Anam", "Udung Uko", "Ukanafun", "Uruan", "Urue-Offong/Oruko", "Uyo"],
+    Anambra: [" ","Aguata", "Anambra East", "Anambra West", "Anaocha", "Awka North", "Awka South", "Ayamelum", "Dunukofia", "Ekwusigo", "Idemili North", "Idemili south", "Ihiala", "Njikoka", "Nnewi North", "Nnewi South", "Ogbaru", "Onitsha North", "Onitsha South", "Orumba North", "Orumba South", "Oyi"],
+    Bauchi: [" ","Alkaleri", "Bauchi", "Bogoro", "Damban", "Darazo", "Dass", "Ganjuwa", "Giade", "Itas/Gadau", "Jama'are", "Katagum", "Kirfi", "Misau", "Ningi", "Shira", "Tafawa-Balewa", "Toro", "Warji", "Zaki"],
+    Bayelsa: [" ","Brass", "Ekeremor", "Kolokuma/Opokuma", "Nembe", "Ogbia", "Sagbama", "Southern Jaw", "Yenegoa"],
+    Benue: [" ","Ado", "Agatu", "Apa", "Buruku", "Gboko", "Guma", "Gwer East", "Gwer West", "Katsina-Ala", "Konshisha", "Kwande", "Logo", "Makurdi", "Obi", "Ogbadibo", "Oju", "Okpokwu", "Ohimini", "Oturkpo", "Tarka", "Ukum", "Ushongo", "Vandeikya"],
+    Borno: [" ","Abadam", "Askira/Uba", "Bama", "Bayo", "Biu", "Chibok", "Damboa", "Dikwa", "Gubio", "Guzamala", "Gwoza", "Hawul", "Jere", "Kaga", "Kala/Balge", "Konduga", "Kukawa", "KwayaKusar", "Mafa", "Magumeri", "Maiduguri", "Marte", "Mobbar", "Monguno", "Ngala", "Nganzai", "Shani"],
+    CrossRiver: [" ","Akpabuyo", "Odukpani", "Akamkpa", "Biase", "Abi", "Ikom", "Yarkur", "Odubra", "Boki", "Ogoja", "Yala", "Obanliku", "Obudu", "Calabar South", "Etung", "Bekwara", "Bakassi", "Calabar Municipality"],
+    Delta: [" ","Oshimili ", "Aniocha", "Aniocha South", "Ika South", "Ika North-East", "Ndokwa West", "Ndokwa East", "Isoko south", "Isoko North", "Bomadi", "Burutu", "Ughelli South", "Ughelli North", "Ethiope West", "Ethiope East", "Sapele", "Okpe", "Warri North", "Warri South", "Uvwie", "Udu", "Warri Central", "Ukwani", "Oshimili North", "Patani"],
+    Ebonyi: [" ","Afikpo South", "Afikpo North", "Onicha", "Ohaozara", "Abakaliki", "Ishielu", "lkwo", "Ezza", "Ezza South", "Ohaukwu", "Ebonyi", "Ivo"],
+    Edo: [" ", "Esan North-East", "Esan Central", "Esan West", "Egor", "Ukpoba", "Central", "Etsako Central", "Igueben", "Oredo", "Ovia SouthWest", "Ovia South-East", "Orhionwon", "Uhunmwonde", "Etsako East", "Esan South-East"],
+    Ekiti: [" ", "Ado", "Ekiti-East", "Ekiti-West", "Emure/Ise/Orun", "Ekiti South-West", "Ikare", "Irepodun", "Ijero", "Ido/Osi", "Oye", "Ikole", "Moba", "Gbonyin", "Efon", "Ise/Orun", "Ilejemeje"],
+    Enugu: [" ", "Enugu South", "Igbo-Eze South", "Enugu North", "Nkanu", "Udi Agwu", "Oji-River", "Ezeagu", "IgboEze North", "Isi-Uzo", "Nsukka", "Igbo-Ekiti", "Uzo-Uwani", "Enugu East", "Aninri", "Nkanu East", "Udenu"],
+    Gombe: [" ", "Akko", "Balanga", "Billiri", "Dukku", "Kaltungo", "Kwami", "Shomgom", "Funakaye", "Gombe", "Nafada/Bajoga", "Yamaltu/Delta"],
+    Imo: [" ", "Aboh-Mbaise", "Ahiazu-Mbaise", "Ehime-Mbano", "Ezinihitte", "Ideato North", "Ideato South", "Ihitte/Uboma", "Ikeduru", "Isiala Mbano", "Isu", "Mbaitoli", "Ngor-Okpala", "Njaba", "Nwangele", "Nkwerre", "Obowo", "Oguta", "Ohaji/Egbema", "Okigwe", "Orlu", "Orsu", "Oru East", "Oru West", "Owerri-Municipal", "Owerri North", "Owerri West"],
+    Jigawa: [" ", "Auyo", "Babura", "Birni Kudu", "Biriniwa", "Buji", "Dutse", "Gagarawa", "Garki", "Gumel", "Guri", "Gwaram", "Gwiwa", "Hadejia", "Jahun", "Kafin Hausa", "Kaugama Kazaure", "Kiri Kasamma", "Kiyawa", "Maigatari", "Malam Madori", "Miga", "Ringim", "Roni", "Sule-Tankarkar", "Taura", "Yankwashi"],
+    Kaduna: [" ", "Birni-Gwari", "Chikun", "Giwa", "Igabi", "Ikara", "Jaba", "Jema'a", "Kachia", "Kaduna North", "Kaduna South", "Kagarko", "Kajuru", "Kaura", "Kauru", "Kubau", "Kudan", "Lere", "Makarfi", "Sabon-Gari", "Sanga", "Soba", "Zango-Kataf", "Zaria"],
+    Kano: [],
+    Katsina: [],
+    Kebbi: [],
+    Kogi: [],
+    Kwara: [],
+    Lagos: [],
+    Nassarawa: [],
+    Niger: [],
+    Ogun: [],
+    Ondo: [],
+    Osun: [],
+    Oyo: [],
+    Plateau: [],
+    Rivers: [],
+    Sokoto: [],
+    Taraba: [],
+    Yobe: [],
+    Zamfara: []
 }
-onload=function(){
-	 populatedropdown('d', 'm', 'y');
-//     triggerUiUpdate();
-}
 
-
-function changeDay(ev)
-{
-//    d = ev.value;
-    d = ev.selectedIndex+1;
-    console.log("Day: ", d);
-}
-
-function changeMonth(ev)
-{
-//    m = ev.value;
-    m = ev.selectedIndex+1;
-    console.log("Month: ", m);
-}
-
-function changeYear(ev)
-{
-    y =  ev.value;
-//    y = ev.selectedIndex+2017;
-    date = d+"/"+m+"/"+y;
-    console.log("Year: ", y);
-    console.log("DATE: ", date);    
+function changecat(value) {
+        if (value.length == 0) document.getElementById("lga_scope").innerHTML = "<option></option>";
+        else {
+            var catOptions = "";
+            for (categoryId in lgasbystate[value]) {
+                catOptions += "<option>" + lgasbystate[value][categoryId] + "</option>";
+            }
+            document.getElementById("lga_scope").innerHTML = catOptions;
+        }
 }
