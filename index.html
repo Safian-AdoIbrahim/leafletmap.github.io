@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Ministère des Mines | Guinée</title>
+    <title> DataPro Agent | Nigeria</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Bungee+Shade" rel="stylesheet">
@@ -37,15 +37,15 @@
         <aside class="main-sidebar main-sidebar-light sidebar_edit">
             <section class="sidebar">
             <div class="text-center">
-                <a target="_blank" href="http://mines.gov.gn/"><h1>Ministère des Mines</h1></a>
+                <a target="_blank" href="http://mines.gov.gn/"><h1>DataPro</h1></a>
             </div>
              <div class="alert alert-info sideColor">
                  <h4 class="info-box-number white"><i class="icon fa fa-globe fa-1x"></i>State</h4>
                       <div class="form-group-sm">
-                        <select name="state_scope" id="state_scope" onChange="changecat(this.value); " class="form-control">
+                        <select name="state_scope" id="state_scope" onChange="changecat(this.value); getAdminLayers();" class="form-control">
 <!--                            getAdminLayers(); triggerUiUpdate();-->
                             <option value="">All</option>
-                            <option value="Abuja">Abuja</option>
+                            <option value="Fct_Abuja">Abuja</option>
                             <option value="Abia">Abia</option>
                             <option value="Adamawa">Adamawa</option>
                             <option value="Akwa Ibom">AkwaIbom</option>
@@ -90,7 +90,8 @@
                  <br>
                  <h4 class="info-box-number white" id="prefecture_id" readonly style="visibility:true"><i class="icon fa fa-globe fa-1x"></i>Local Government Area</h4>
                       <div id="prefecture_id1" class="form-group-sm" readonly style="visibility:true">
-                        <select name="lga_scope" id="lga_scope" onchange="getAdminLayers(); triggerUiUpdate();" class="form-control">
+                        <select name="lga_scope" id="lga_scope" onchange="getAdminLayers();" class="form-control">
+<!--                             triggerUiUpdate();-->
                             <option value="" disabled selected>All</option>
                         </select>
                     </div>
@@ -102,10 +103,14 @@
                       <div class="form-group-sm">
                         <select id="societe_scope" onchange="triggerUiUpdate(); getAdminLayers();" class="form-control">
                             <option value="">All</option>
-                                <option value="G.A.C">G.A.C</option>
-                                <option value="C.B.G">C.B.G</option>
-                                <option value="RUSSAL">RUSSAL</option>
-                                <option value="Emporium">Emporium</option>
+                                <option value="Sterling">Sterling</option>
+                                <option value="Diamond">Diamond</option>
+                                <option value="Access">Access</option>
+                                <option value="Ecobank">Ecobank</option>
+                                <option value="Wema">Wema</option>
+                                <option value="GTB">GTB</option>
+                                <option value="Jaiz">Jaiz</option>
+                                <option value="Rosabon">Rosabon</option>
                         </select>
                       </div>
 
@@ -116,12 +121,14 @@
                       <div class="form-group-sm">
                         <select id="substance_type" onchange="triggerUiUpdate(); getAdminLayers();" class="form-control">
                             <option value="">All</option>
+<!--
                                 <option value="Or">Or</option>
                                 <option value="Calcaire">Calcaire</option>
                                 <option value="Diamant">Diamant</option>
                                 <option value="Bauxite">Bauxite</option>
                                 <option value="Granite">Tantalite</option>
                                 <option value="Dolérite">Dolérite</option>
+-->
                         </select>
                       </div>
                 <br>

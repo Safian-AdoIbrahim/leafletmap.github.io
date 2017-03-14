@@ -3,11 +3,11 @@ var d, m, y, date, type = '', distance,
     twokm, threekm, fourkm,
     region = '', prefecture = '', prefecture_select = '', sub_prefecture = '', 
     geoData = null, dataLayer = null, markerGroup = null, 
-    guineaAdminLayer0, guineaAdminLayer1, guineaAdminLayer2,
-    region_layer = null, prefecture_layer = null, sub_prefecture_layer = null, bufferLayer = null, substance_layer = null,
-    GINLabels = [],
+    nigeriaAdminLayer0, nigeriaAdminLayer1, nigeriaAdminLayer2,
+    country_layer = null, state_layer = null, lga_layer = null, ward_layer = null, bufferLayer = null, substance_layer = null,
+    NGRLabels = [],
     within, within_fc, buffered = null,
-    GINAdmin2 = false,
+    NGRAdmin2 = false,
     googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3']}),
     googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3']}),
     osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18}),
@@ -15,15 +15,15 @@ var d, m, y, date, type = '', distance,
 
 //Initiating and declaring leaflet map object
 var map = L.map('map', {
-    center: [9.6, -12.6],
-    zoom: 7,
+    center: [10, 8],
+    zoom: 6,
     animation: true,
     zoomControl: false,
     layers: [osm]
-    //minZoom: 6
+//    minZoom: 6
 
 });
-map.options.minZoom = 7;
+map.options.minZoom = 5;
 
 var baseMaps = {
     "Google Satelite": googleSat,
@@ -52,26 +52,26 @@ L.control.scale({
 }).addTo(map);
 
 //Helps add label to the polygons for admin boundary at zoom level greater than 9
-function adjustLayerbyZoom(zoomGIN) {
+function adjustLayerbyZoom(zoomNigeria) {
 
-    if (zoomGIN > 11) {
-        if (!GINAdmin2) {
-            map.addLayer(guineaAdminLayer2)
+    if (zoomNigeria > 11) {
+        if (!NGRAdmin2) {
+            map.addLayer(nigeriaAdminLayer2)
                 //Add labels to the Admin2
-            for (var i = 0; i < GINLabels.length; i++) {
-                GINLabels[i].addTo(map)
+            for (var i = 0; i < NGRLabels.length; i++) {
+                NGRLabels[i].addTo(map)
 
             }
-            GINAdmin2 = true
+            NGRAdmin2 = true
         }
     } else {
-        map.removeLayer(guineaAdminLayer2)
-        for (var i = 0; i < GINLabels.length; i++) {
-            map.removeLayer(GINLabels[i])
+        map.removeLayer(nigeriaAdminLayer2)
+        for (var i = 0; i < NGRLabels.length; i++) {
+            map.removeLayer(NGRLabels[i])
 
         }
 
-        GINAdmin2 = false
+        NGRAdmin2 = false
     }
 
 }
@@ -230,50 +230,54 @@ function addAdminLayersToMap(layers) {
             }
       }
 
-    regionSelect = $('#state_scope').val()
-    prefectureSelect = $('#lga_scope').val()
-    guineaAdminLayer0 = L.geoJson(layers['guineaAdmin0'], {
+    stateSelect = $('#state_scope').val()
+    lgaSelect = $('#lga_scope').val()
+    nigeriaAdminLayer0 = L.geoJson(layers['nigeriaAdmin0'], {
         style: layerStyles['admin0']
     }).addTo(map)
 
-    guineaAdminLayer2 = L.geoJson(layers['guineaAdmin2'], {
+    nigeriaAdminLayer2 = L.geoJson(layers['nigeriaAdmin2'], {
         style: layerStyles['region'],
         onEachFeature: function (feature, layer) {
             var labelIcon = L.divIcon({
                 className: 'labelLga-icon',
-                html: feature.properties.NAME_2
+                html: feature.properties.LGAName
             })
-            GINLabels.push(L.marker(layer.getBounds().getCenter(), {
+            NGRLabels.push(L.marker(layer.getBounds().getCenter(), {
                     icon: labelIcon
                 }))
 
         }
     })
 
-    //Zoom In to region level on selection
-    if(region_layer != null)
-      map.removeLayer(region_layer)
+    //Zoom In to state level on selection
+    if(state_layer != null)
+        {
+             map.removeLayer(state_layer)
+//             map.removeLayer(nigeriaAdminLayer0)
+        }
+//      map.removeLayer(state_layer)
 
-      region_layer = L.geoJson(layers['guineaAdmin1'], {
+      state_layer = L.geoJson(layers['nigeriaAdmin1'], {
         filter: function(feature) {
-          return feature.properties.NAME_1 === regionSelect
+          return feature.properties.StateName === stateSelect
       },
       style: layerStyles['region'],
       }).addTo(map)
-    map.fitBounds(region_layer)
+    map.fitBounds(state_layer)
 
-    //Zoom In to Prefecture Level on selection
+    //Zoom In to LGA Level on selection
 
-    if(prefecture_layer != null)
-      map.removeLayer(prefecture_layer)
+    if(lga_layer != null)
+      map.removeLayer(lga_layer)
 
-      prefecture_layer = L.geoJson(layers['guineaAdmin2'], {
+      lga_layer = L.geoJson(layers['nigeriaAdmin2'], {
         filter: function(feature) {
-          return feature.properties.NAME_2 === prefectureSelect
+          return feature.properties.LGAName === lgaSelect
       },
       style: layerStyles['region'],
       }).addTo(map)
-    map.fitBounds(prefecture_layer)
+    map.fitBounds(lga_layer)
     console.log("Zoom Level ",map.getZoom());
 }
 
@@ -331,23 +335,23 @@ function getAdminLayers() {
     var adminLayers = {}
 
     //Add Admin Layers to Map
-     $.get('resources/GIN_Admin0.json', function (guinea_admin0) {
-        adminLayers['guineaAdmin0'] = guinea_admin0
+     $.get('resources/NGR_Admin0.json', function (nigeria_admin0) {
+        adminLayers['nigeriaAdmin0'] = nigeria_admin0
         addAdminLayersToMap(adminLayers)
 		}).fail(function () {
             logError(null)
         })
 
-     $.get('resources/GIN_Admin1.json', function (guinea_admin1) {
-        adminLayers['guineaAdmin1']= guinea_admin1
+     $.get('resources/NGR_Admin1.json', function (nigeria_admin1) {
+        adminLayers['nigeriaAdmin1']= nigeria_admin1
         addAdminLayersToMap(adminLayers)
 		}).fail(function () {
             logError(null)
         })
 
 
-     $.get('resources/GIN_Admin2.json', function (guinea_admin2) {
-        adminLayers['guineaAdmin2'] = guinea_admin2
+     $.get('resources/NGR_Admin2.json', function (nigeria_admin2) {
+        adminLayers['nigeriaAdmin2'] = nigeria_admin2
         addAdminLayersToMap(adminLayers)
 		}).fail(function () {
             logError(null)
@@ -359,25 +363,6 @@ function getAdminLayers() {
 function logError(error) {
     console.log("error!")
 }
-
-
-//
-//function showPrefecture() {
-//    prefecture_show = document.getElementById("prefecture_id");
-//    prefecture_show1 = document.getElementById("prefecture_id1");
-//    console.log("Show: ", prefecture_show);
-//    console.log("Show1: ", prefecture_show1);
-//    if(prefecture_select != "") {
-//         prefecture_show.style.visibility = "true"
-//         prefecture_show1.style.visibility = "true"
-//    }
-//
-//    else{
-//        prefecture_show.style.visibility = "hidden"
-//        prefecture_show1.style.visibility = "hidden"
-//    }
-//
-//}
 
 
 
