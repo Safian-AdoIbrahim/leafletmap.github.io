@@ -219,14 +219,6 @@ function addAdminLayersToMap(layers) {
                 "weight": 2.5,
                 "opacity": 0.7,
                 "fillOpacity": 0.05
-            },
-            'sub_prefecture': {
-                "clickable": true,
-                "color": '#ff0000',
-                "fillColor": '#80FFFFFF',
-                "weight": 2.5,
-                "opacity": 0.7,
-                "fillOpacity": 0.05
             }
       }
 
