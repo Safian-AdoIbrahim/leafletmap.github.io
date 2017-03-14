@@ -54,7 +54,7 @@ L.control.scale({
 //Helps add label to the polygons for admin boundary at zoom level greater than 9
 function adjustLayerbyZoom(zoomNigeria) {
 
-    if (zoomNigeria > 9) {
+    if (zoomNigeria > 10) {
         if (!NGRAdmin2) {
             map.addLayer(nigeriaAdminLayer2)
                 //Add labels to the Admin2
