@@ -224,6 +224,7 @@ function addAdminLayersToMap(layers) {
 
     stateSelect = $('#state_scope').val()
     lgaSelect = $('#lga_scope').val()
+    console.log("State_LGA: ", stateSelect+"  "+lgaSelect)
     nigeriaAdminLayer0 = L.geoJson(layers['nigeriaAdmin0'], {
         style: layerStyles['admin0']
     }).addTo(map)
