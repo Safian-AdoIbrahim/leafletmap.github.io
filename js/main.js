@@ -1,5 +1,5 @@
 // Various variable declaration
-var d, m, y, date, type = '', distance,
+var d, m, y, date, type = '', distance, state,
     twokm, threekm, fourkm,
     region = '', prefecture = '', prefecture_select = '', sub_prefecture = '', 
     geoData = null, dataLayer = null, markerGroup = null, 
@@ -78,52 +78,48 @@ function adjustLayerbyZoom(zoomNigeria) {
 
 //This drives all the operation that will be rendering on the map
 function triggerUiUpdate() {
-    societe = $('#societe_scope').val()
-    region = $('#state_scope').val()
-    prefecture = $('#lga_scope').val()
-    substance = $('#substance_type').val()
-    console.log("All Seleceted: ", societe+"  "+region+"  "+prefecture+"  "+substance+"  "+date)
-    var query = buildQuery(region, prefecture, sub_prefecture, date)
+    statecode = $('#state_scope').val()
+    if (statecode.length > 0 && statecode == 'Lagos'){
+        state = 'LA';
+    }
+    if (statecode.length > 0 && statecode == 'Ogun'){
+        state = 'OG';
+    }
+    lga = $('#lga_scope').val()
+    bank = $('#bank_scope').val()
+    console.log("All Seleceted: ", state+"  "+lga+"  "+bank)
+    var query = buildQuery(state, lga, bank)
     getData(query)
     prefecture_select = $('#state_scope').val()
 }
 
 
 //Read data from carto and filter via selection from the interface
-function buildQuery(type, region, prefecture, sub_prefecture) {
+function buildQuery(state, lga, bank) {
   var needsAnd = false;
-    query = 'https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM mine_guinea';
-    console.log("Date in Query: ",date)
-   if (region.length > 0 || prefecture.length > 0 || societe.length > 0 || substance.length > 0 ){
+    query = 'https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM datapro_visualization';
+//    console.log("Date in Query: ",date)
+   if (state.length > 0 || lga.length > 0 || bank.length > 0 ){
        query = query.concat(' WHERE')
-       if (region.length > 0){
-      query = query.concat(" region = '".concat(region.concat("'")))
+       if (state.length > 0){
+      query = query.concat(" state = '".concat(state.concat("'")))
       needsAnd = true
     }
 
 
-    if(prefecture.length > 0) {
-      query = needsAnd  ? query.concat(" AND prefecture = '".concat(prefecture.concat("'"))) :  query.concat(" prefecture = '".concat(prefecture.concat("'")))
+    if(lga.length > 0) {
+      query = needsAnd  ? query.concat(" AND lga = '".concat(lga.concat("'"))) :  query.concat(" lga = '".concat(lga.concat("'")))
       needsAnd = true
     }
 
-    if (societe.length > 0){
-      query = needsAnd  ? query.concat(" AND societe = '".concat(societe.concat("'"))) :  query.concat(" societe = '".concat(societe.concat("'")))
+    if (bank.length > 0){
+      query = needsAnd  ? query.concat(" AND bank = '".concat(bank.concat("'"))) :  query.concat(" bank = '".concat(bank.concat("'")))
       needsAnd = true
     }
 
-    if(substance.length > 0) {
-      query = needsAnd  ? query.concat(" AND substance = '".concat(substance.concat("'"))) :  query.concat(" substance = '".concat(substance.concat("'")))
-      needsAnd = true
-    }
-
-//       if(date.length > 0) {
-//      query = needsAnd  ? query.concat(" OR date = '".concat(date.concat("'"))) :  query.concat(" date = '".concat(date.concat("'")))
-//      needsAnd = true
-//    }
-
-   }
-     else query = 'https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM mine_guinea';
+}
+     else query = 'https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM datapro_visualization';
+                   https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM mine_guinea
   return query
 
 }
@@ -147,7 +143,7 @@ function addDataToMap(geoData) {
     var _fillOpacity = 2.0
 
     var dolerite = L.icon({
-        iconUrl: "image/dolerite.jpg",
+        iconUrl: "image/user1.jpg",
         iconSize: [20, 20],
         iconAnchor: [25, 25]
     });
@@ -293,7 +289,7 @@ function normalizeName(source) {
 //Help with popup information
 function buildPopupContent(feature) {
     var subcontent = ''
-    var propertyNames = ['date', 'region', 'prefecture', 'sous_prefecture', 'prenoms_et_nom', 'fonction', 'societe', 'prenom_directeur', 'prenom_nom_directeur', 'sexe_directeur', 'adresse_email', 'numero_telephone']
+    var propertyNames = ['bank', 'customer_name', 'risk_score', 'lga', 'ref_no', 'address', 'nearest_bustop', 'type_of_structure', 'landmark', 'name_of_landmark', 'customer_status', 'client', 'contact_name', 'convinction', 'visiting_officer_name', 'verification_status']
     for (var i = 0; i < propertyNames.length; i++) {
         subcontent = subcontent.concat('<p><strong>' + normalizeName(propertyNames[i]) + ': </strong>' + feature.properties[propertyNames[i]] + '</p>')
 
