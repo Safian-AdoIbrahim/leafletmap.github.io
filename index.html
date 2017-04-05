@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
     <!-- Theme style -->
     <link rel="stylesheet" href="css/AdminLTE.css">
     <link rel="stylesheet" href="css/skins/skin-blue.css">
@@ -42,13 +42,13 @@
              <div class="alert alert-info sideColor">
                  <h4 class="info-box-number white"><i class="icon fa fa-globe fa-1x"></i>State</h4>
                       <div class="form-group-sm">
-                        <select name="state_scope" id="state_scope" onChange="changecat(this.value); getAdminLayers();" class="form-control">
+                        <select name="state_scope" id="state_scope" onChange="changecat(this.value); getAdminLayers(); triggerUiUpdate();" class="form-control">
 <!--                            getAdminLayers(); triggerUiUpdate();-->
                             <option value="">All</option>
                             <option value="FCT_Abuja">FCT Abuja</option>
                             <option value="Abia">Abia</option>
                             <option value="Adamawa">Adamawa</option>
-                            <option value="Akwa Ibom">AkwaIbom</option>
+                            <option value="AkwaIbom">AkwaIbom</option>
                             <option value="Anambra">Anambra</option>
                             <option value="Bauchi">Bauchi</option>
                             <option value="Bayelsa">Bayelsa</option>
@@ -90,7 +90,7 @@
                  <br>
                  <h4 class="info-box-number white" id="prefecture_id" readonly style="visibility:true"><i class="icon fa fa-globe fa-1x"></i>Local Government Area</h4>
                       <div id="prefecture_id1" class="form-group-sm" readonly style="visibility:true">
-                        <select name="lga_scope" id="lga_scope" onchange="getAdminLayers();" class="form-control">
+                        <select name="lga_scope" id="lga_scope" onchange="getAdminLayers(); triggerUiUpdate();" class="form-control">
 <!--                             triggerUiUpdate();-->
                             <option value="" disabled selected>All</option>
                         </select>
@@ -101,7 +101,7 @@
                  <br>
                  <h4 class="info-box-number white"><i class="icon fa fa-building fa-1x"></i>Bank Name</h4>
                       <div class="form-group-sm">
-                        <select id="societe_scope" onchange="triggerUiUpdate(); getAdminLayers();" class="form-control">
+                        <select id="bank_scope" onchange="triggerUiUpdate(); getAdminLayers(); triggerUiUpdate();" class="form-control">
                             <option value="">All</option>
                                 <option value="Sterling">Sterling</option>
                                 <option value="Diamond">Diamond</option>
@@ -114,23 +114,6 @@
                         </select>
                       </div>
 
-
-                 <!--Substance / Natural Resources-->
-                 <br>
-                 <h4 class="info-box-number white"><i class="icon fa fa-user fa-1x"></i>Customer Name</h4>
-                      <div class="form-group-sm">
-                        <select id="substance_type" onchange="triggerUiUpdate(); getAdminLayers();" class="form-control">
-                            <option value="">All</option>
-<!--
-                                <option value="Or">Or</option>
-                                <option value="Calcaire">Calcaire</option>
-                                <option value="Diamant">Diamant</option>
-                                <option value="Bauxite">Bauxite</option>
-                                <option value="Granite">Tantalite</option>
-                                <option value="Dolérite">Dolérite</option>
--->
-                        </select>
-                      </div>
                 <br>
                  
                  <div class="text-center">
@@ -141,7 +124,7 @@
             </div>
           </section>
             <div class="logo_pad">
-<!--                    <a target="_blank" href="http://mines.gov.gn/"><img  src="image/logo2.png" height="70" width="300"></a>-->
+                    <a target="_blank" href="http://datapronigeria.com/"><img  src="image/logo1.jpg" height="70" width="200"></a>
             </div>
 
         </aside>
@@ -159,7 +142,7 @@
               <div class="alert sideColor">
                     <div class="box box-primary box-solid">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Customer Information</h3>
+                            <h3 class="box-title">Detail Information</h3>
                             <div class="box-tools pull-right">
                                 <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                             </div>
@@ -178,7 +161,7 @@
                 <li><a target="_blank" href="https://www.facebook.com/BrianAlex1251" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                 <li><a target="_blank" href="https://www.twitter.com/femtope" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                 <li><a target="_blank" href="https://plus.google.com/u/0/115849015961200482106" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/oluwafemi-ooju-0061b627" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+
 
             </ul>
         </div>
