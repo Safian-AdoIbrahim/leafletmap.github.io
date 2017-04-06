@@ -90,6 +90,7 @@ function triggerUiUpdate() {
     console.log("All Seleceted: ", state+"  "+lga+"  "+bank)
     var query = buildQuery(state, lga, bank)
     getData(query)
+    console.log("QUERY:  ", query)
     prefecture_select = $('#state_scope').val()
 }
 
@@ -119,7 +120,6 @@ function buildQuery(state, lga, bank) {
 
 }
      else query = 'https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM datapro_visualization';
-                   https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM mine_guinea
   return query
 
 }
@@ -142,7 +142,7 @@ function addDataToMap(geoData) {
     var _opacity = 2
     var _fillOpacity = 2.0
 
-    var dolerite = L.icon({
+    var customer = L.icon({
         iconUrl: "image/user1.jpg",
         iconSize: [20, 20],
         iconAnchor: [25, 25]
@@ -159,13 +159,11 @@ function addDataToMap(geoData) {
         })
         dataLayer = L.geoJson(geoData, {
         pointToLayer: function (feature, latlng) {
-            var marker = L.marker(latlng, {icon: dolerite})
-                //markerGroup.addLayer(marker);
+            var marker = L.marker(latlng, {icon: customer})
             return marker
         },
         onEachFeature: function (feature, layer) {
             if (feature.properties && feature.properties.cartodb_id) {
-                //layer.bindPopup(buildPopupContent(feature));
                 layer.on('click', function () {
                     displayInfo(feature)
                 })
@@ -176,7 +174,7 @@ function addDataToMap(geoData) {
     })
 
     markerGroup.addLayer(dataLayer);
-    map.fitBounds(dataLayer);
+//    map.fitBounds(dataLayer);
     map.addLayer(markerGroup);
 }
 
@@ -241,11 +239,7 @@ function addAdminLayersToMap(layers) {
 
     //Zoom In to state level on selection
     if(state_layer != null)
-        {
              map.removeLayer(state_layer)
-//             map.removeLayer(nigeriaAdminLayer0)
-        }
-//      map.removeLayer(state_layer)
 
       state_layer = L.geoJson(layers['nigeriaAdmin1'], {
         filter: function(feature) {
@@ -326,35 +320,26 @@ function getAdminLayers() {
     //Add Admin Layers to Map
      $.get('resources/NGR_Admin0.json', function (nigeria_admin0) {
         adminLayers['nigeriaAdmin0'] = nigeria_admin0
-        addAdminLayersToMap(adminLayers)
-		}).fail(function () {
+        $.get('resources/NGR_Admin1.json', function (nigeria_admin1) {
+            adminLayers['nigeriaAdmin1']= nigeria_admin1
+                $.get('resources/NGR_Admin2.json', function (nigeria_admin2) {
+                    adminLayers['nigeriaAdmin2'] = nigeria_admin2
+                    addAdminLayersToMap(adminLayers)
+		              }).fail(function () {
+                    logError(null)
+                })
+        }).fail(function () {
+            logError(null)
+            })
+     }).fail(function () {
             logError(null)
         })
-
-     $.get('resources/NGR_Admin1.json', function (nigeria_admin1) {
-        adminLayers['nigeriaAdmin1']= nigeria_admin1
-        addAdminLayersToMap(adminLayers)
-		}).fail(function () {
-            logError(null)
-        })
-
-
-     $.get('resources/NGR_Admin2.json', function (nigeria_admin2) {
-        adminLayers['nigeriaAdmin2'] = nigeria_admin2
-        addAdminLayersToMap(adminLayers)
-		}).fail(function () {
-            logError(null)
-        })
-
 
 }
 
 function logError(error) {
     console.log("error!")
 }
-
-
-
 getAdminLayers()
 hideLoader()
 /*triggerUiUpdate()*/
