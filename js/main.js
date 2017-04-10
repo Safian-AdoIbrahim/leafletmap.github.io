@@ -10,20 +10,20 @@ var d, m, y, date, type = '', distance, state,
     NGRAdmin2 = false,
     googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3']}),
     googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3']}),
-    osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18}),
+    osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 20}),
     mapbox = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoicy1jaGFuZCIsImEiOiJjaXdmcmtnc2QwMDBhMnltczBldmc1MHZuIn0.eIdXZvG0VOOcZhhoHpUQYA')
 
 //Initiating and declaring leaflet map object
 var map = L.map('map', {
     center: [10, 8],
     zoom: 6,
-    animation: true,
+//    animation: true,
     zoomControl: false,
-    layers: [osm]
-//    minZoom: 6
+    layers: [osm],
+    minZoom: 6
 
 });
-map.options.minZoom = 5;
+//map.options.minZoom = 5;
 
 var baseMaps = {
     "Google Satelite": googleSat,
@@ -78,13 +78,13 @@ function adjustLayerbyZoom(zoomNigeria) {
 
 //This drives all the operation that will be rendering on the map
 function triggerUiUpdate() {
-    statecode = $('#state_scope').val()
-    if (statecode.length > 0 && statecode == 'Lagos'){
-        state = 'LA';
-    }
-    if (statecode.length > 0 && statecode == 'Ogun'){
-        state = 'OG';
-    }
+    state = $('#state_scope').val()
+//    if (statecode.length > 0 && statecode == 'Lagos'){
+//        state = 'LA';
+//    }
+//    if (statecode.length > 0 && statecode == 'Ogun'){
+//        state = 'OG';
+//    }
     lga = $('#lga_scope').val()
     bank = $('#bank_scope').val()
     console.log("All Seleceted: ", state+"  "+lga+"  "+bank)
