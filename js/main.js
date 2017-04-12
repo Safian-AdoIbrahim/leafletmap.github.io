@@ -247,7 +247,12 @@ function addAdminLayersToMap(layers) {
       },
       style: layerStyles['region'],
       }).addTo(map)
-    map.fitBounds(state_layer)
+
+//    state_layer.on('ready', function(e) {
+//         map.fitBounds(state_layer.getBounds())
+//    })
+    console.log(state_layer)
+    map.fitBounds(state_layer.getBounds())
 
     //Zoom In to LGA Level on selection
 
@@ -260,7 +265,9 @@ function addAdminLayersToMap(layers) {
       },
       style: layerStyles['region'],
       }).addTo(map)
-    map.fitBounds(lga_layer)
+
+     map.fitBounds(lga_layer.getBounds())
+
     console.log("Zoom Level ",map.getZoom());
 }
 
@@ -336,6 +343,25 @@ function getAdminLayers() {
         })
 
 }
+
+
+//function getAdminLayers() {
+//    showLoader()
+//    var adminLayers = {}
+//    $.get('resources/state_boundary.geojson', function (nigeria_admin1) {
+//        //add admin layers to map
+//        adminLayers['nigeriaAdmin1'] = JSON.parse(nigeria_admin1)
+//        $.get('resources/lga_boundary.geojson', function (nigeria_admin2) {
+//            adminLayers['nigeriaAdmin2'] = JSON.parse(nigeria_admin2)
+//                //return the layers
+//            addAdminLayersToMap(adminLayers)
+//        }).fail(function () {
+//            logError(null)
+//        })
+//    }).fail(function () {
+//        logError(null) //TODO: Fix this terrible code
+//    })
+//}
 
 function logError(error) {
     console.log("error!")

@@ -89,7 +89,7 @@
                  <br>
                  <h4 class="info-box-number white" id="prefecture_id" readonly style="visibility:true"><i class="icon fa fa-globe fa-1x"></i>Local Government Area</h4>
                       <div id="prefecture_id1" class="form-group-sm" readonly style="visibility:true">
-                        <select name="lga_scope" id="lga_scope" onchange="triggerUiUpdate(); getAdminLayers(); " class="form-control">
+                        <select name="lga_scope" id="lga_scope" onchange="getAdminLayers(); triggerUiUpdate();" class="form-control">
 <!--                             triggerUiUpdate();-->
                             <option value="" disabled selected>All</option>
                         </select>
