@@ -89,7 +89,7 @@ function triggerUiUpdate() {
     lga = $('#lga_scope').val()
     bank = $('#bank_scope').val()
     console.log("All Seleceted: ", state+"  "+lga+"  "+bank)
-    var query = buildQuery(state, lga, bank)
+    var query = buildQuery(state, bank)
     getData(query)
     console.log("QUERY:  ", query)
     prefecture_select = $('#state_scope').val()
@@ -97,11 +97,12 @@ function triggerUiUpdate() {
 
 
 //Read data from carto and filter via selection from the interface
-function buildQuery(state, lga, bank) {
+function buildQuery(state, bank) {
   var needsAnd = false;
     query = 'https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM datapro_visualization';
 //    console.log("Date in Query: ",date)
-   if (state.length > 0 || lga.length > 0 || bank.length > 0 ){
+   if (state.length > 0 || bank.length > 0 ){
+//       || lga.length > 0
        query = query.concat(' WHERE')
        if (state.length > 0){
       query = query.concat(" state = '".concat(state.concat("'")))
@@ -109,10 +110,10 @@ function buildQuery(state, lga, bank) {
     }
 
 
-    if(lga.length > 0) {
-      query = needsAnd  ? query.concat(" AND lga = '".concat(lga.concat("'"))) :  query.concat(" lga = '".concat(lga.concat("'")))
-      needsAnd = true
-    }
+//    if(lga.length > 0) {
+//      query = needsAnd  ? query.concat(" AND lga = '".concat(lga.concat("'"))) :  query.concat(" lga = '".concat(lga.concat("'")))
+//      needsAnd = true
+//    }
 
     if (bank.length > 0){
       query = needsAnd  ? query.concat(" AND bank = '".concat(bank.concat("'"))) :  query.concat(" bank = '".concat(bank.concat("'")))
