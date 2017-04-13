@@ -20,7 +20,8 @@ var map = L.map('map', {
 //    animation: true,
     zoomControl: false,
     layers: [osm],
-    minZoom: 6
+    minZoom: 6,
+    maxZoom: 22
 
 });
 //map.options.minZoom = 5;
@@ -33,7 +34,7 @@ var baseMaps = {
 };
 
 map.on('zoomend', function () {
-    adjustLayerbyZoom(map.getZoom())
+//    adjustLayerbyZoom(map.getZoom())
 
 })
 
@@ -52,29 +53,29 @@ L.control.scale({
 }).addTo(map);
 
 //Helps add label to the polygons for admin boundary at zoom level greater than 9
-function adjustLayerbyZoom(zoomNigeria) {
-
-    if (zoomNigeria > 10) {
-        if (!NGRAdmin2) {
-            map.addLayer(nigeriaAdminLayer2)
-                //Add labels to the Admin2
-            for (var i = 0; i < NGRLabels.length; i++) {
-                NGRLabels[i].addTo(map)
-
-            }
-            NGRAdmin2 = true
-        }
-    } else {
-        map.removeLayer(nigeriaAdminLayer2)
-        for (var i = 0; i < NGRLabels.length; i++) {
-            map.removeLayer(NGRLabels[i])
-
-        }
-
-        NGRAdmin2 = false
-    }
-
-}
+//function adjustLayerbyZoom(zoomNigeria) {
+//
+//    if (zoomNigeria > 10) {
+//        if (!NGRAdmin2) {
+//            map.addLayer(nigeriaAdminLayer2)
+//                //Add labels to the Admin2
+//            for (var i = 0; i < NGRLabels.length; i++) {
+//                NGRLabels[i].addTo(map)
+//
+//            }
+//            NGRAdmin2 = true
+//        }
+//    } else {
+//        map.removeLayer(nigeriaAdminLayer2)
+//        for (var i = 0; i < NGRLabels.length; i++) {
+//            map.removeLayer(NGRLabels[i])
+//
+//        }
+//
+//        NGRAdmin2 = false
+//    }
+//
+//}
 
 //This drives all the operation that will be rendering on the map
 function triggerUiUpdate() {
