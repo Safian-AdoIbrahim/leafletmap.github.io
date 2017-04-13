@@ -37,13 +37,13 @@
         <aside class="main-sidebar main-sidebar-light sidebar_edit">
             <section class="sidebar">
             <div class="text-center">
-                <a target="_blank" href="http://mines.gov.gn/"><h1>DataPro</h1></a>
+                <a target="_blank" href="http://datapronigeria.com/"><h1>DataPro</h1></a>
             </div>
              <div class="alert alert-info sideColor">
                  <h4 class="info-box-number white"><i class="icon fa fa-globe fa-1x"></i>State</h4>
                       <div class="form-group-sm">
-                        <select name="state_scope" id="state_scope" onChange="changecat(this.value); getAdminLayers(); triggerUiUpdate();" class="form-control">
-<!--                            getAdminLayers(); triggerUiUpdate();-->
+                        <select name="state_scope" id="state_scope" onChange="getAdminLayers(); triggerUiUpdate();" class="form-control">
+<!--                            changecat(this.value); -->
                             <option value="">All</option>
                             <option value="FCT_Abuja">FCT Abuja</option>
                             <option value="Abia">Abia</option>
@@ -88,20 +88,22 @@
 
                  <!--Prefecture DropDown-->
                  <br>
+<!--
                  <h4 class="info-box-number white" id="prefecture_id" readonly style="visibility:true"><i class="icon fa fa-globe fa-1x"></i>Local Government Area</h4>
                       <div id="prefecture_id1" class="form-group-sm" readonly style="visibility:true">
                         <select name="lga_scope" id="lga_scope" onchange="getAdminLayers(); triggerUiUpdate();" class="form-control">
-<!--                             triggerUiUpdate();-->
+
                             <option value="" disabled selected>All</option>
                         </select>
                     </div>
+-->
 
                  
                  <!--Company -->
                  <br>
                  <h4 class="info-box-number white"><i class="icon fa fa-building fa-1x"></i>Bank Name</h4>
                       <div class="form-group-sm">
-                        <select id="bank_scope" onchange="triggerUiUpdate(); getAdminLayers(); triggerUiUpdate();" class="form-control">
+                        <select id="bank_scope" onchange="getAdminLayers(); triggerUiUpdate();" class="form-control">
                             <option value="">All</option>
                                 <option value="Sterling">Sterling</option>
                                 <option value="Diamond">Diamond</option>
@@ -124,7 +126,7 @@
             </div>
           </section>
             <div class="logo_pad">
-                    <a target="_blank" href="http://datapronigeria.com/"><img  src="image/logo1.jpg" height="70" width="200"></a>
+                    <a target="_blank" href="http://datapronigeria.com/"><img  src="image/logo.JPEG" height="70" width="200"></a>
             </div>
 
         </aside>
@@ -134,7 +136,7 @@
 
                 </div>
                 <div>
-                  <h7 class="red text-center"><i class="icon fa fa-spinner fa-5x" id="spinposition"></i></h7>
+                  <h7 class="black text-center"><i class="icon fa fa-spinner fa-5x" id="spinposition"></i></h7>
                 </div>
 
 

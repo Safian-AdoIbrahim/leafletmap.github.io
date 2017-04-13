@@ -31,6 +31,10 @@
 .red {
     color: red;
 }
+
+.black {
+    color: black;
+}
 .bg-aqua,
 .callout.callout-info,
 .alert-info,

@@ -10,20 +10,21 @@ var d, m, y, date, type = '', distance, state,
     NGRAdmin2 = false,
     googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3']}),
     googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3']}),
-    osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18}),
+    osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 20}),
     mapbox = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoicy1jaGFuZCIsImEiOiJjaXdmcmtnc2QwMDBhMnltczBldmc1MHZuIn0.eIdXZvG0VOOcZhhoHpUQYA')
 
 //Initiating and declaring leaflet map object
 var map = L.map('map', {
     center: [10, 8],
     zoom: 6,
-    animation: true,
+//    animation: true,
     zoomControl: false,
-    layers: [osm]
-//    minZoom: 6
+    layers: [osm],
+    minZoom: 6,
+    maxZoom: 22
 
 });
-map.options.minZoom = 5;
+//map.options.minZoom = 5;
 
 var baseMaps = {
     "Google Satelite": googleSat,
@@ -33,7 +34,7 @@ var baseMaps = {
 };
 
 map.on('zoomend', function () {
-    adjustLayerbyZoom(map.getZoom())
+//    adjustLayerbyZoom(map.getZoom())
 
 })
 
@@ -52,54 +53,56 @@ L.control.scale({
 }).addTo(map);
 
 //Helps add label to the polygons for admin boundary at zoom level greater than 9
-function adjustLayerbyZoom(zoomNigeria) {
-
-    if (zoomNigeria > 10) {
-        if (!NGRAdmin2) {
-            map.addLayer(nigeriaAdminLayer2)
-                //Add labels to the Admin2
-            for (var i = 0; i < NGRLabels.length; i++) {
-                NGRLabels[i].addTo(map)
-
-            }
-            NGRAdmin2 = true
-        }
-    } else {
-        map.removeLayer(nigeriaAdminLayer2)
-        for (var i = 0; i < NGRLabels.length; i++) {
-            map.removeLayer(NGRLabels[i])
-
-        }
-
-        NGRAdmin2 = false
-    }
-
-}
+//function adjustLayerbyZoom(zoomNigeria) {
+//
+//    if (zoomNigeria > 10) {
+//        if (!NGRAdmin2) {
+//            map.addLayer(nigeriaAdminLayer2)
+//                //Add labels to the Admin2
+//            for (var i = 0; i < NGRLabels.length; i++) {
+//                NGRLabels[i].addTo(map)
+//
+//            }
+//            NGRAdmin2 = true
+//        }
+//    } else {
+//        map.removeLayer(nigeriaAdminLayer2)
+//        for (var i = 0; i < NGRLabels.length; i++) {
+//            map.removeLayer(NGRLabels[i])
+//
+//        }
+//
+//        NGRAdmin2 = false
+//    }
+//
+//}
 
 //This drives all the operation that will be rendering on the map
 function triggerUiUpdate() {
-    statecode = $('#state_scope').val()
-    if (statecode.length > 0 && statecode == 'Lagos'){
-        state = 'LA';
-    }
-    if (statecode.length > 0 && statecode == 'Ogun'){
-        state = 'OG';
-    }
+    state = $('#state_scope').val()
+//    if (statecode.length > 0 && statecode == 'Lagos'){
+//        state = 'LA';
+//    }
+//    if (statecode.length > 0 && statecode == 'Ogun'){
+//        state = 'OG';
+//    }
     lga = $('#lga_scope').val()
     bank = $('#bank_scope').val()
     console.log("All Seleceted: ", state+"  "+lga+"  "+bank)
-    var query = buildQuery(state, lga, bank)
+    var query = buildQuery(state, bank)
     getData(query)
+    console.log("QUERY:  ", query)
     prefecture_select = $('#state_scope').val()
 }
 
 
 //Read data from carto and filter via selection from the interface
-function buildQuery(state, lga, bank) {
+function buildQuery(state, bank) {
   var needsAnd = false;
     query = 'https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM datapro_visualization';
 //    console.log("Date in Query: ",date)
-   if (state.length > 0 || lga.length > 0 || bank.length > 0 ){
+   if (state.length > 0 || bank.length > 0 ){
+//       || lga.length > 0
        query = query.concat(' WHERE')
        if (state.length > 0){
       query = query.concat(" state = '".concat(state.concat("'")))
@@ -107,10 +110,10 @@ function buildQuery(state, lga, bank) {
     }
 
 
-    if(lga.length > 0) {
-      query = needsAnd  ? query.concat(" AND lga = '".concat(lga.concat("'"))) :  query.concat(" lga = '".concat(lga.concat("'")))
-      needsAnd = true
-    }
+//    if(lga.length > 0) {
+//      query = needsAnd  ? query.concat(" AND lga = '".concat(lga.concat("'"))) :  query.concat(" lga = '".concat(lga.concat("'")))
+//      needsAnd = true
+//    }
 
     if (bank.length > 0){
       query = needsAnd  ? query.concat(" AND bank = '".concat(bank.concat("'"))) :  query.concat(" bank = '".concat(bank.concat("'")))
@@ -119,7 +122,6 @@ function buildQuery(state, lga, bank) {
 
 }
      else query = 'https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM datapro_visualization';
-                   https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM mine_guinea
   return query
 
 }
@@ -142,7 +144,7 @@ function addDataToMap(geoData) {
     var _opacity = 2
     var _fillOpacity = 2.0
 
-    var dolerite = L.icon({
+    var customer = L.icon({
         iconUrl: "image/user1.jpg",
         iconSize: [20, 20],
         iconAnchor: [25, 25]
@@ -159,13 +161,11 @@ function addDataToMap(geoData) {
         })
         dataLayer = L.geoJson(geoData, {
         pointToLayer: function (feature, latlng) {
-            var marker = L.marker(latlng, {icon: dolerite})
-                //markerGroup.addLayer(marker);
+            var marker = L.marker(latlng, {icon: customer})
             return marker
         },
         onEachFeature: function (feature, layer) {
             if (feature.properties && feature.properties.cartodb_id) {
-                //layer.bindPopup(buildPopupContent(feature));
                 layer.on('click', function () {
                     displayInfo(feature)
                 })
@@ -176,7 +176,7 @@ function addDataToMap(geoData) {
     })
 
     markerGroup.addLayer(dataLayer);
-    map.fitBounds(dataLayer);
+//    map.fitBounds(dataLayer);
     map.addLayer(markerGroup);
 }
 
@@ -241,11 +241,7 @@ function addAdminLayersToMap(layers) {
 
     //Zoom In to state level on selection
     if(state_layer != null)
-        {
              map.removeLayer(state_layer)
-//             map.removeLayer(nigeriaAdminLayer0)
-        }
-//      map.removeLayer(state_layer)
 
       state_layer = L.geoJson(layers['nigeriaAdmin1'], {
         filter: function(feature) {
@@ -253,7 +249,12 @@ function addAdminLayersToMap(layers) {
       },
       style: layerStyles['region'],
       }).addTo(map)
-    map.fitBounds(state_layer)
+
+//    state_layer.on('ready', function(e) {
+//         map.fitBounds(state_layer.getBounds())
+//    })
+    console.log(state_layer)
+    map.fitBounds(state_layer.getBounds())
 
     //Zoom In to LGA Level on selection
 
@@ -266,7 +267,9 @@ function addAdminLayersToMap(layers) {
       },
       style: layerStyles['region'],
       }).addTo(map)
-    map.fitBounds(lga_layer)
+
+     map.fitBounds(lga_layer.getBounds())
+
     console.log("Zoom Level ",map.getZoom());
 }
 
@@ -326,35 +329,45 @@ function getAdminLayers() {
     //Add Admin Layers to Map
      $.get('resources/NGR_Admin0.json', function (nigeria_admin0) {
         adminLayers['nigeriaAdmin0'] = nigeria_admin0
-        addAdminLayersToMap(adminLayers)
-		}).fail(function () {
+        $.get('resources/NGR_Admin1.json', function (nigeria_admin1) {
+            adminLayers['nigeriaAdmin1']= nigeria_admin1
+                $.get('resources/NGR_Admin2.json', function (nigeria_admin2) {
+                    adminLayers['nigeriaAdmin2'] = nigeria_admin2
+                    addAdminLayersToMap(adminLayers)
+		              }).fail(function () {
+                    logError(null)
+                })
+        }).fail(function () {
+            logError(null)
+            })
+     }).fail(function () {
             logError(null)
         })
-
-     $.get('resources/NGR_Admin1.json', function (nigeria_admin1) {
-        adminLayers['nigeriaAdmin1']= nigeria_admin1
-        addAdminLayersToMap(adminLayers)
-		}).fail(function () {
-            logError(null)
-        })
-
-
-     $.get('resources/NGR_Admin2.json', function (nigeria_admin2) {
-        adminLayers['nigeriaAdmin2'] = nigeria_admin2
-        addAdminLayersToMap(adminLayers)
-		}).fail(function () {
-            logError(null)
-        })
-
 
 }
+
+
+//function getAdminLayers() {
+//    showLoader()
+//    var adminLayers = {}
+//    $.get('resources/state_boundary.geojson', function (nigeria_admin1) {
+//        //add admin layers to map
+//        adminLayers['nigeriaAdmin1'] = JSON.parse(nigeria_admin1)
+//        $.get('resources/lga_boundary.geojson', function (nigeria_admin2) {
+//            adminLayers['nigeriaAdmin2'] = JSON.parse(nigeria_admin2)
+//                //return the layers
+//            addAdminLayersToMap(adminLayers)
+//        }).fail(function () {
+//            logError(null)
+//        })
+//    }).fail(function () {
+//        logError(null) //TODO: Fix this terrible code
+//    })
+//}
 
 function logError(error) {
     console.log("error!")
 }
-
-
-
 getAdminLayers()
 hideLoader()
 /*triggerUiUpdate()*/
