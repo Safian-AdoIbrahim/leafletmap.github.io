@@ -77,6 +77,17 @@ L.control.scale({
 //
 //}
 
+function customerName() {
+   // var customer_name = document.getElementById('customer_name').value;
+    customer_name = $('#customer_name').val();
+    console.log("Customer Name: ", customer_name);
+
+    if(customer_name.length > 2)
+        {
+            triggerUiUpdate();
+        }
+}
+
 //This drives all the operation that will be rendering on the map
 function triggerUiUpdate() {
     state = $('#state_scope').val()
@@ -86,10 +97,11 @@ function triggerUiUpdate() {
 //    if (statecode.length > 0 && statecode == 'Ogun'){
 //        state = 'OG';
 //    }
-    lga = $('#lga_scope').val()
-    bank = $('#bank_scope').val()
-    console.log("All Seleceted: ", state+"  "+lga+"  "+bank)
-    var query = buildQuery(state, bank)
+    lga = $('#lga_scope').val();
+    bank = $('#bank_scope').val();
+    customer_name = $('#customer_name').val();
+    console.log("All Seleceted: ", state+"  "+customer_name+"  "+bank)
+    var query = buildQuery(state, customer_name, bank)
     getData(query)
     console.log("QUERY:  ", query)
     prefecture_select = $('#state_scope').val()
@@ -97,17 +109,24 @@ function triggerUiUpdate() {
 
 
 //Read data from carto and filter via selection from the interface
-function buildQuery(state, bank) {
+function buildQuery(state, customer_name, bank) {
   var needsAnd = false;
     query = 'https://femtope.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT * FROM datapro_visualization';
 //    console.log("Date in Query: ",date)
-   if (state.length > 0 || bank.length > 0 ){
+   if (state.length > 0 || customer_name > 2 || bank.length > 0 ){
 //       || lga.length > 0
        query = query.concat(' WHERE')
        if (state.length > 0){
       query = query.concat(" state = '".concat(state.concat("'")))
       needsAnd = true
     }
+
+
+    if(customer_name.length > 2) {
+      query = needsAnd  ? query.concat(" AND customer_name LIKE '%25".concat(customer_name.concat("%25'"))) :  query.concat(" customer_name LIKE '%25".concat(customer_name.concat("%25'")))
+      needsAnd = true
+    }
+
 
 
 //    if(lga.length > 0) {
