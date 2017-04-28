@@ -40,17 +40,17 @@ map.on('zoomend', function () {
 
 
 new L.Control.Zoom({
-    position: 'topright'
+    position: 'bottomright'
 }).addTo(map);
 
 L.control.layers(baseMaps).addTo(map);
 
-L.control.scale({
-    position: 'bottomright',
-    maxWidth: 100,
-    metric: true,
-    updateWhenIdle: true
-}).addTo(map);
+//L.control.scale({
+//    position: 'bottomright',
+//    maxWidth: 100,
+//    metric: true,
+//    updateWhenIdle: true
+//}).addTo(map);
 
 //Helps add label to the polygons for admin boundary at zoom level greater than 9
 //function adjustLayerbyZoom(zoomNigeria) {

@@ -134,9 +134,9 @@
 
 #detailPosition{
     position: absolute;
-    top: 100px;
+    top: 40px;
     right: 0px;
-    width: 250px;
+    width: 290px;
     height: 100px;
     background: transparent;
 }
