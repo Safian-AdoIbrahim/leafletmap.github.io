@@ -123,7 +123,7 @@ function buildQuery(state, customer_name, bank) {
 
 
     if(customer_name.length > 2) {
-      query = needsAnd  ? query.concat(" AND customer_name LIKE '%25".concat(customer_name.concat("%25'"))) :  query.concat(" customer_name LIKE '%25".concat(customer_name.concat("%25'")))
+      query = needsAnd  ? query.concat(" AND customer_name LIKE '%25".concat(customer_name.concat("%25'"))).concat(" OR customer_name LIKE '%25".concat(customer_name.charAt(0).toUpperCase()+customer_name.slice(1).concat("%25'"))) :  query.concat(" customer_name LIKE '%25".concat(customer_name.concat("%25'"))).concat(" OR customer_name LIKE '%25".concat(customer_name.charAt(0).toUpperCase()+customer_name.slice(1).concat("%25'")))
       needsAnd = true
     }
 
