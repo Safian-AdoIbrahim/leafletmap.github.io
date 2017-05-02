@@ -92,6 +92,16 @@
 
 }
 
+.imgbutton {
+    background-image: url(images/print1.jpg);
+    background-repeat: no-repeat;
+}
+
+.imgsize{
+    height: 50px;
+    width: 50px;
+}
+
 /*
 .btnAd{
     padding-left: 60px;

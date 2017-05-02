@@ -102,6 +102,8 @@ function triggerUiUpdate() {
     customer_name = $('#customer_name').val();
     console.log("All Seleceted: ", state+"  "+customer_name+"  "+bank)
     var query = buildQuery(state, customer_name, bank)
+    download_query = (query.replace("http:", "https:").replace("format=GeoJSON&", ""))+"&format=CSV";
+    document.getElementById("query").setAttribute("href",download_query);
     getData(query)
     console.log("QUERY:  ", query)
     prefecture_select = $('#state_scope').val()
