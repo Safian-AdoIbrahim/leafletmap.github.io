@@ -1,0 +1,10 @@
+
+
+{
+  "name": "protection_sector_service_mapping",
+  "version": "1.0",
+  "description": "service mapping for protection sector in Northeast Nigeria",
+  "main": "main.js",
+  "author": "Safianu Ado Ibrahim",
+  "license": "ISC"
+}

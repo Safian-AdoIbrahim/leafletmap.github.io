@@ -1,0 +1,2255 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.68896484,11.53309531 ]
+	 },
+	 "properties": {
+	 "id":1,
+	 "name_of_organization":"Borno State Ministry of Women Affairs and Social Development/UNICEF",
+	 "services_offered":"Child Protection (UASC,CAAFAG,GBV,PSS)",
+	 "days_and_hours_of_operation":"Monday to Friday, 8:00am to 4pm",
+	 "contact_phone_number":"Usman . A Umar, 08026744981, alhajiuthman2014@gmail.com",
+	 "State":"Borno",
+	 "location":"Bama GSSSS and Host Community",
+	 "sector":"Protection",
+	 "image":"/logos/logos_merged_govt_unicef.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.69214058,11.53275892 ]
+	 },
+	 "properties": {
+	 "id":2,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Protection Monitoring Activities and Responses",
+	 "days_and_hours_of_operation":"Monday to Friday \n8:00am – 4:00pm\n",
+	 "contact_phone_number":"Usman Umar Abubakar, 08084851799        ",
+	 "State":"Borno",
+	 "location":"Bama GSSSS and Host Community",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.68973732,11.52468542 ]
+	 },
+	 "properties": {
+	 "id":3,
+	 "name_of_organization":"International Alert",
+	 "services_offered":"Peace Building and Conflict Resolution.",
+	 "days_and_hours_of_operation":"Monday to Friday \n8:00am – 4:00pm\n",
+	 "contact_phone_number":"Baba gana Fewbe, 09023701473, Hadiza Isa Hassan, 07089995718",
+	 "State":"Borno",
+	 "location":"Bama GSSSS and Host Community",
+	 "sector":"Protection",
+	 "image":"/logos/international_alert.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.68767738,11.52081678 ]
+	 },
+	 "properties": {
+	 "id":4,
+	 "name_of_organization":"INTERSOS",
+	 "services_offered":"Protection and Health",
+	 "days_and_hours_of_operation":"Monday to Friday\n8:00am – 5:00pm\n",
+	 "contact_phone_number":"Barnabas John (protection) 08128548494",
+	 "State":"Borno",
+	 "location":"Bama GSSSS and Host Community",
+	 "sector":"Protection",
+	 "image":"/logos/intersos.jpeg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.68390083,11.5286381 ]
+	 },
+	 "properties": {
+	 "id":5,
+	 "name_of_organization":"IOM",
+	 "services_offered":"CCCM,WASH,ETT,MHPSS, Data Traccking Math",
+	 "days_and_hours_of_operation":"Monday to Friday \n8:00am – 4:00pm\n",
+	 "contact_phone_number":"Johnson Owoicho, 09021135730, owijohnson90@gmail.com",
+	 "State":"Borno",
+	 "location":"Bama GSSSS and Host Community",
+	 "sector":"Protection",
+	 "image":"/logos/iom.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.6905098,11.5172845 ]
+	 },
+	 "properties": {
+	 "id":6,
+	 "name_of_organization":"Center for Community Health and Development (CHAD)",
+	 "services_offered":"Casemanagement, Family Tracing ",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 4pm",
+	 "contact_phone_number":"Hyeladi Peter, 09021638198",
+	 "State":"Borno",
+	 "location":"Bama GSSSSCamp and Host Community",
+	 "sector":"Child Protection",
+	 "image":"/logos/chad.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.6947155,11.52661971 ]
+	 },
+	 "properties": {
+	 "id":7,
+	 "name_of_organization":"Neem Foundation",
+	 "services_offered":"Psycological couselling and economic empowerment",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 4pm",
+	 "contact_phone_number":"Buba Sajan, 07011723785",
+	 "State":"Borno",
+	 "location":"Bama GSSSSCamp and Host Community",
+	 "sector":"Protection and Livelihood",
+	 "image":"/logos/neem.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.68432999,11.52367621 ]
+	 },
+	 "properties": {
+	 "id":8,
+	 "name_of_organization":"MAG INTL",
+	 "services_offered":"Mine Risk Education",
+	 "days_and_hours_of_operation":"Monday to Friday \n8:00am – 4:00pm\n",
+	 "contact_phone_number":"Akila Bulus,08026334627",
+	 "State":"Borno",
+	 "location":"Bama GSSSSCamp and Host Community",
+	 "sector":"Protection",
+	 "image":""
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.14308167,11.82837391 ]
+	 },
+	 "properties": {
+	 "id":9,
+	 "name_of_organization":"UNHCR/Nigeria Bar Association. (NBA)",
+	 "services_offered":"Legal Services, Documentation and Court Representation ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Coordinator Access to Justice : Barrister Babakura Kaka 08033678872",
+	 "State":"Borno",
+	 "location":"MMC",
+	 "sector":"Protection ",
+	 "image":"/logos/nba.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.14651489,11.79292017 ]
+	 },
+	 "properties": {
+	 "id":10,
+	 "name_of_organization":"UNHCR/Nigeria Bar Association. (NBA)",
+	 "services_offered":"Legal Services, Documentation and Court Representation ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Coordinator Access to Justice : Barrister Babakura Kaka 08033678872",
+	 "State":"Borno",
+	 "location":"Jere",
+	 "sector":"Protection ",
+	 "image":"/logos/nba.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.68304253,11.51711629 ]
+	 },
+	 "properties": {
+	 "id":11,
+	 "name_of_organization":"UNHCR/Nigeria Bar Association. (NBA)",
+	 "services_offered":"Legal Services, Documentation and Court Representation ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Coordinator Access to Justice : Barrister Babakura Kaka 08033678872",
+	 "State":"Borno",
+	 "location":"Bama",
+	 "sector":"Protection ",
+	 "image":"/logos/nba.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.18744802,12.34146916 ]
+	 },
+	 "properties": {
+	 "id":12,
+	 "name_of_organization":"UNHCR/Nigeria Bar Association. (NBA)",
+	 "services_offered":"Legal Services, Documentation and Court Representation ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Coordinator Access to Justice : Barrister Babakura Kaka 08033678872",
+	 "State":"Borno",
+	 "location":"Ngala",
+	 "sector":"Protection ",
+	 "image":"/logos/nba.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.60948563,12.68047253 ]
+	 },
+	 "properties": {
+	 "id":13,
+	 "name_of_organization":"UNHCR/Nigeria Bar Association. (NBA)",
+	 "services_offered":"Legal Services, Documentation and Court Representation ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Coordinator Access to Justice : Barrister Babakura Kaka 08033678872",
+	 "State":"Borno",
+	 "location":"Monguno",
+	 "sector":"Protection ",
+	 "image":"/logos/nba.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.77600789,11.22861369 ]
+	 },
+	 "properties": {
+	 "id":14,
+	 "name_of_organization":"UNHCR/Nigeria Bar Association. (NBA)",
+	 "services_offered":"Legal Services, Documentation and Court Representation ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Coordinator Access to Justice : Barrister Babakura Kaka 08033678872",
+	 "State":"Borno",
+	 "location":"Pulka",
+	 "sector":"Protection ",
+	 "image":"/logos/nba.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.1480732,11.25190117 ]
+	 },
+	 "properties": {
+	 "id":15,
+	 "name_of_organization":"UNHCR/Nigeria Bar Association. (NBA)",
+	 "services_offered":"Legal Services, Documentation and Court Representation ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Coordinator Access to Justice : Barrister Babakura Kaka 08033678872",
+	 "State":"Borno",
+	 "location":"Banki",
+	 "sector":"Protection ",
+	 "image":"/logos/nba.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.69282722,11.0839115 ]
+	 },
+	 "properties": {
+	 "id":16,
+	 "name_of_organization":"UNHCR/Nigeria Bar Association. (NBA)",
+	 "services_offered":"Legal Services, Documentation and Court Representation ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Coordinator Access to Justice : Barrister Babakura Kaka 08033678872",
+	 "State":"Borno",
+	 "location":"Gwoza",
+	 "sector":"Protection ",
+	 "image":"/logos/nba.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 12.50999451,13.10652268 ]
+	 },
+	 "properties": {
+	 "id":17,
+	 "name_of_organization":"UNHCR/Nigeria Bar Association. (NBA)",
+	 "services_offered":"Legal Services, Documentation and Court Representation ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Coordinator Access to Justice : Barrister Babakura Kaka 08033678872",
+	 "State":"Borno",
+	 "location":"Damasak ",
+	 "sector":"Protection ",
+	 "image":"/logos/nba.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.14788818,11.82434148 ]
+	 },
+	 "properties": {
+	 "id":18,
+	 "name_of_organization":"UNHCR/Grassroot Initiative For Strenghtening Community Ressilience (GISCOR) ",
+	 "services_offered":"Protection Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Protection Officer: (Mr. Ali Maina: 08033307052",
+	 "State":"Borno",
+	 "location":"MMC",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.14188004,11.78586248 ]
+	 },
+	 "properties": {
+	 "id":19,
+	 "name_of_organization":"UNHCR/Grassroot Initiative For Strenghtening Community Ressilience (GISCOR) ",
+	 "services_offered":"Protection Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Protection Officer: (Mr. Ali Maina: 08033307052",
+	 "State":"Borno",
+	 "location":"Jere",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.68973732,11.52905859 ]
+	 },
+	 "properties": {
+	 "id":20,
+	 "name_of_organization":"UNHCR/Grassroot Initiative For Strenghtening Community Ressilience (GISCOR) ",
+	 "services_offered":"Protection Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Protection Officer: (Mr. Ali Maina: 08033307052",
+	 "State":"Borno",
+	 "location":"Bama ",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.61718893,12.67316635 ]
+	 },
+	 "properties": {
+	 "id":21,
+	 "name_of_organization":"UNHCR/Grassroot Initiative For Strenghtening Community Ressilience (GISCOR) ",
+	 "services_offered":"Protection Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Protection Officer: (Mr. Ali Maina: 08033307052",
+	 "State":"Borno",
+	 "location":"Monguno",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.77703786,11.22764553 ]
+	 },
+	 "properties": {
+	 "id":22,
+	 "name_of_organization":"UNHCR/Grassroot Initiative For Strenghtening Community Ressilience (GISCOR) ",
+	 "services_offered":"Protection Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Protection Officer: (Mr. Ali Maina: 08033307052",
+	 "State":"Borno",
+	 "location":"Pulka",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.14283752,11.25291134 ]
+	 },
+	 "properties": {
+	 "id":23,
+	 "name_of_organization":"UNHCR/Grassroot Initiative For Strenghtening Community Ressilience (GISCOR) ",
+	 "services_offered":"Protection Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Protection Officer: (Mr. Ali Maina: 08033307052",
+	 "State":"Borno",
+	 "location":"Banki",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.68982315,11.0813846 ]
+	 },
+	 "properties": {
+	 "id":24,
+	 "name_of_organization":"UNHCR/Grassroot Initiative For Strenghtening Community Ressilience (GISCOR) ",
+	 "services_offered":"Protection Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 hours (8:00am to 6:00pm) ",
+	 "contact_phone_number":"Protection Officer: (Mr. Ali Maina: 08033307052",
+	 "State":"Borno",
+	 "location":"Gwoza",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.14788818,11.83946276 ]
+	 },
+	 "properties": {
+	 "id":25,
+	 "name_of_organization":"UNHCR/American University of Nigeria (AUN)",
+	 "services_offered":"Livelihood ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"Project Manager  (Mr. Isa Musa) 08127224120",
+	 "State":"Borno",
+	 "location":"MMC",
+	 "sector":"Protection",
+	 "image":"/logos/aun.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.69454384,11.53141335 ]
+	 },
+	 "properties": {
+	 "id":26,
+	 "name_of_organization":"UNHCR/American University of Nigeria (AUN)",
+	 "services_offered":"Livelihood ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"Project Manager  (Mr. Isa Musa) 08127224120",
+	 "State":"Borno",
+	 "location":"Bama",
+	 "sector":"Protection",
+	 "image":"/logos/aun.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.18485165,12.34174167 ]
+	 },
+	 "properties": {
+	 "id":27,
+	 "name_of_organization":"UNHCR/American University of Nigeria (AUN)",
+	 "services_offered":"Livelihood ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"Project Manager  (Mr. Isa Musa) 08127224120",
+	 "State":"Borno",
+	 "location":"Ngala",
+	 "sector":"Protection",
+	 "image":"/logos/aun.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.69460821,11.0824796 ]
+	 },
+	 "properties": {
+	 "id":28,
+	 "name_of_organization":"UNHCR/American University of Nigeria (AUN)",
+	 "services_offered":"Livelihood ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"Project Manager  (Mr. Isa Musa) 08127224120",
+	 "State":"Borno",
+	 "location":"Gwoza ",
+	 "sector":"Protection",
+	 "image":"/logos/aun.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 12.50724792,13.10355505 ]
+	 },
+	 "properties": {
+	 "id":29,
+	 "name_of_organization":"UNHCR/American University of Nigeria (AUN)",
+	 "services_offered":"Livelihood ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"Project Manager  (Mr. Isa Musa) 08127224120",
+	 "State":"Borno",
+	 "location":"Damasak ",
+	 "sector":"Protection",
+	 "image":"/logos/aun.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.15063477,11.83341435 ]
+	 },
+	 "properties": {
+	 "id":30,
+	 "name_of_organization":"UNHCR/Borno Women Development Initiatives (BOWDI)",
+	 "services_offered":"SGBV Response, Child Protection and Support ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am  to 6:00pm)",
+	 "contact_phone_number":"Focal Person: Mr. Daniel Obagiela (08064206011",
+	 "State":"Borno",
+	 "location":"MMC",
+	 "sector":"Protection ",
+	 "image":"/logos/bowdi.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.1837225,11.85479319 ]
+	 },
+	 "properties": {
+	 "id":31,
+	 "name_of_organization":"UNHCR/Borno Women Development Initiatives (BOWDI)",
+	 "services_offered":"SGBV Response, Child Protection and Support ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am  to 6:00pm)",
+	 "contact_phone_number":"Focal Person: Mr. Daniel Obagiela (08064206011",
+	 "State":"Borno",
+	 "location":"Jere",
+	 "sector":"Protection ",
+	 "image":"/logos/bowdi.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.69299889,11.52434901 ]
+	 },
+	 "properties": {
+	 "id":32,
+	 "name_of_organization":"UNHCR/Borno Women Development Initiatives (BOWDI)",
+	 "services_offered":"SGBV Response, Child Protection and Support ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am  to 6:00pm)",
+	 "contact_phone_number":"Focal Person: Mr. Daniel Obagiela (08064206011",
+	 "State":"Borno",
+	 "location":"Bama",
+	 "sector":"Protection ",
+	 "image":"/logos/bowdi.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.18834925,12.33939394 ]
+	 },
+	 "properties": {
+	 "id":33,
+	 "name_of_organization":"UNHCR/Borno Women Development Initiatives (BOWDI)",
+	 "services_offered":"SGBV Response, Child Protection and Support ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am  to 6:00pm)",
+	 "contact_phone_number":"Focal Person: Mr. Daniel Obagiela (08064206011",
+	 "State":"Borno",
+	 "location":"Ngala ",
+	 "sector":"Protection ",
+	 "image":"/logos/bowdi.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.77719879,11.22395175 ]
+	 },
+	 "properties": {
+	 "id":34,
+	 "name_of_organization":"UNHCR/Borno Women Development Initiatives (BOWDI)",
+	 "services_offered":"SGBV Response, Child Protection and Support ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am  to 6:00pm)",
+	 "contact_phone_number":"Focal Person: Mr. Daniel Obagiela (08064206011",
+	 "State":"Borno",
+	 "location":"Pulka",
+	 "sector":"Protection ",
+	 "image":"/logos/bowdi.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.14944649,11.25589974 ]
+	 },
+	 "properties": {
+	 "id":35,
+	 "name_of_organization":"UNHCR/Borno Women Development Initiatives (BOWDI)",
+	 "services_offered":"SGBV Response, Child Protection and Support ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am  to 6:00pm)",
+	 "contact_phone_number":"Focal Person: Mr. Daniel Obagiela (08064206011",
+	 "State":"Borno",
+	 "location":"Banki",
+	 "sector":"Protection ",
+	 "image":"/logos/bowdi.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.70041251,11.07416176 ]
+	 },
+	 "properties": {
+	 "id":36,
+	 "name_of_organization":"UNHCR/Borno Women Development Initiatives (BOWDI)",
+	 "services_offered":"SGBV Response, Child Protection and Support ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am  to 6:00pm)",
+	 "contact_phone_number":"Focal Person: Mr. Daniel Obagiela (08064206011",
+	 "State":"Borno",
+	 "location":"Gwoza ",
+	 "sector":"Protection ",
+	 "image":"/logos/bowdi.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 12.51454353,13.10221751 ]
+	 },
+	 "properties": {
+	 "id":37,
+	 "name_of_organization":"UNHCR/Borno Women Development Initiatives (BOWDI)",
+	 "services_offered":"SGBV Response, Child Protection and Support ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am  to 6:00pm)",
+	 "contact_phone_number":"Focal Person: Mr. Daniel Obagiela (08064206011",
+	 "State":"Borno",
+	 "location":"Damasak ",
+	 "sector":"Protection ",
+	 "image":"/logos/bowdi.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.15511131,11.25215372 ]
+	 },
+	 "properties": {
+	 "id":38,
+	 "name_of_organization":"International Organization for Migration (IOM)",
+	 "services_offered":"WASH, Camp Management, Emergency Tracking Of new arrival, mental health and psychosocial support, shelter construction and rehabilitation, NFI contribution, Hygiene promotion and campaign.",
+	 "days_and_hours_of_operation":"Monday -Friday For 8 hours",
+	 "contact_phone_number":"Farouk Gideon Yakaka, Focal Person, 07035130701",
+	 "State":"Borno",
+	 "location":"Banki IDP Camp",
+	 "sector":"Camp Management, Mental Health and Psychsocial Support, Emergency Tracking, Shelter Construction,Wash,Nfi Disribution.",
+	 "image":"/logos/iom.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.1570425,11.2989229 ]
+	 },
+	 "properties": {
+	 "id":39,
+	 "name_of_organization":"Center for Community Health and Development (CHAD)",
+	 "services_offered":"Family Tracing and Reunification, CAAFAG,SGBV/GBV,Child at risk,Separated, Unaccampanied children and proper case management.",
+	 "days_and_hours_of_operation":"From Monday to Saturdays 8:00am to 5:00pm",
+	 "contact_phone_number":"OBI Lucy Chioma, Case Worker, 08039361630, Lucychioma75@gmail.com",
+	 "State":"Borno",
+	 "location":"Buduwa, Banki Camp.",
+	 "sector":"Child Protection",
+	 "image":"/logos/chad.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.14811611,11.2490811 ]
+	 },
+	 "properties": {
+	 "id":40,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Vulnerability screening and registration, identification and refarrals of Prtection cases, access to justice, Focus group discussions and awearness rising sessions and Non-Food Items",
+	 "days_and_hours_of_operation":"Mondays -Fridays, 8am - 4pm",
+	 "contact_phone_number":"Jamil Yerima, protection monitor, 08036204607, jamilyerima123@gmail.com    Subject to Reviewed",
+	 "State":"Borno",
+	 "location":"Banki IDP Camp, Bama LGA.",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.6877,11.0896 ]
+	 },
+	 "properties": {
+	 "id":41,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":" Outreach and Information disemination, Protection Monitoring, community based structure (protection action group members PAGs), Legal Advice and counselling,  Referrals, Protection Mainstreaming, Civil documentation, Targetted individual assistance (TIA), community training, information center/mobile desk.",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Khadijah 08037730108  and PAGs",
+	 "State":"Borno",
+	 "location":"Wakane (Gwoza LGA)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.6967808,11.09899875 ]
+	 },
+	 "properties": {
+	 "id":42,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":" Outreach and Information disemination, Protection Monitoring, community based structure (protection action group members PAGs), Legal Advice and counselling,  Referrals, Protection Mainstreaming, Civil documentation, Targetted individual assistance (TIA), community training, information center/mobile desk.",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Khadijah 08037730108  and PAGs",
+	 "State":"Borno",
+	 "location":"Gadamayo (Gowza LGA)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.6877,11.0896 ]
+	 },
+	 "properties": {
+	 "id":43,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":" Outreach and Information disemination, Protection Monitoring, community based structure (protection action group members PAGs), Legal Advice and counselling,  Referrals, Protection Mainstreaming, Civil documentation, Targetted individual assistance (TIA), community training, information center/mobile desk.",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Khadijah 08037730108  and PAGs",
+	 "State":"Borno",
+	 "location":"Wakane (Gowza LGA)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.70041251,11.07416176 ]
+	 },
+	 "properties": {
+	 "id":44,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":" Outreach and Information disemination, Protection Monitoring, community based structure (protection action group members PAGs), Legal Advice and counselling,  Referrals, Protection Mainstreaming, Civil documentation, Targetted individual assistance (TIA), community training, information center/mobile desk.",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Khadijah 08037730108  and PAGs",
+	 "State":"Borno",
+	 "location":"GSS Camp (Gowza LGA)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.6901,11.07 ]
+	 },
+	 "properties": {
+	 "id":45,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":" Outreach and Information disemination, Protection Monitoring, community based structure (protection action group members PAGs), Legal Advice and counselling,  Referrals, Protection Mainstreaming, Civil documentation, Targetted individual assistance (TIA), community training, information center/mobile desk.",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Khadijah 08037730108  and PAGs",
+	 "State":"Borno",
+	 "location":"20 housing (Gowza LGA)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.25275183,11.87387104 ]
+	 },
+	 "properties": {
+	 "id":46,
+	 "name_of_organization":"International Organization for Migration (IOM)",
+	 "services_offered":"Counselling, Recreational activitis (for chldren), Informal Education (Adults), Conflict Mediation, Counter trafficking/protection/ GBV prevention and response, Livelihood interventions, Coordination",
+	 "days_and_hours_of_operation":"Monday - Friday 9am - 4pm",
+	 "contact_phone_number":"Jerry Bwalami, 07025461641, bwalami.jerry@yahoo.com; Mamza Dabarju Anaryu, 08035862022",
+	 "State":"Borno",
+	 "location":"Muna El-badawe Camp (Jere LGA)",
+	 "sector":"Protection, Camp coordnation, Camp Management",
+	 "image":"/logos/iom.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.2152,11.8662 ]
+	 },
+	 "properties": {
+	 "id":47,
+	 "name_of_organization":"International Organization for Migration (IOM)",
+	 "services_offered":"Counselling, Recreational activitis (for chldren), Informal Education (Adults), Conflict Mediation, Counter trafficking/protection/ GBV prevention and response, Livelihood interventions, Coordination",
+	 "days_and_hours_of_operation":"Monday - Friday 9am - 4pm",
+	 "contact_phone_number":"Jerry Bwalami, 07025461641, bwalami.jerry@yahoo.com; Mamza Dabarju Anaryu, 08035862022",
+	 "State":"Borno",
+	 "location":"Farm Center Camp (Jere LGA)",
+	 "sector":"Protection, Camp coordnation, Camp Management",
+	 "image":"/logos/iom.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.18098664,11.87772424 ]
+	 },
+	 "properties": {
+	 "id":48,
+	 "name_of_organization":"International Organization for Migration (IOM)",
+	 "services_offered":"Counselling, Recreational activitis (for chldren), Informal Education (Adults), Conflict Mediation, Counter trafficking/protection/ GBV prevention and response, Livelihood interventions, Coordination",
+	 "days_and_hours_of_operation":"Monday - Friday 9am - 4pm",
+	 "contact_phone_number":"Jerry Bwalami, 07025461641, bwalami.jerry@yahoo.com; Mamza Dabarju Anaryu, 08035862022",
+	 "State":"Borno",
+	 "location":"Madinatu Camp (Jere LGA)",
+	 "sector":"Protection, Camp coordnation, Camp Management",
+	 "image":"/logos/iom.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.25253725,11.8756979 ]
+	 },
+	 "properties": {
+	 "id":49,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Vulnerability screening and registration, identification and refarrals of Prtection cases, access to justice, Focus group discussions and awearness rising sessions and Non-Food Items",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 4pm",
+	 "contact_phone_number":"Protecion Desk at Muna Camp, 08038135409                     Subject to reviewed",
+	 "State":"Borno",
+	 "location":"Muna El-badawe Camp (Jere LGA)",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.25258017,11.87271611 ]
+	 },
+	 "properties": {
+	 "id":50,
+	 "name_of_organization":"Dibal 360 NIKAO Foundation",
+	 "services_offered":"Child Protection",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 4pm",
+	 "contact_phone_number":"Yeri,a John Bitrus, 08032616824/08150557489",
+	 "State":"Borno",
+	 "location":"Muna El-badawe Camp (Jere LGA)",
+	 "sector":"Child Protection",
+	 "image":""
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.2509923,11.87636985 ]
+	 },
+	 "properties": {
+	 "id":51,
+	 "name_of_organization":"Center for Community Health and Development (CHAD)",
+	 "services_offered":"Casemanagement, Family Tracing ",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 4pm",
+	 "contact_phone_number":"Aisha Ma'aji, Case Worker 08038683881",
+	 "State":"Borno",
+	 "location":"Muna El-badawe Camp (Jere LGA)",
+	 "sector":"Child Protection",
+	 "image":"/logos/chad.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.2455,11.8669 ]
+	 },
+	 "properties": {
+	 "id":52,
+	 "name_of_organization":"Center for Community Health and Development (CHAD)",
+	 "services_offered":"Casemanagement, Family Tracing ",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 4pm",
+	 "contact_phone_number":"Aisha Ma'aji, Case Worker 08038683881",
+	 "State":"Borno",
+	 "location":"Muna Moforo",
+	 "sector":"Child Protection",
+	 "image":"/logos/chad.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.253,11.8689 ]
+	 },
+	 "properties": {
+	 "id":53,
+	 "name_of_organization":"Center for Community Health and Development (CHAD)",
+	 "services_offered":"Casemanagement, Family Tracing ",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 4pm",
+	 "contact_phone_number":"Aisha Ma'aji, Case Worker 08038683881",
+	 "State":"Borno",
+	 "location":"Muna Daliti",
+	 "sector":"Child Protection",
+	 "image":"/logos/chad.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.2781,11.8773 ]
+	 },
+	 "properties": {
+	 "id":54,
+	 "name_of_organization":"Center for Community Health and Development (CHAD)",
+	 "services_offered":"Casemanagement, Family Tracing ",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 4pm",
+	 "contact_phone_number":"Aisha Ma'aji, Case Worker 08038683881",
+	 "State":"Borno",
+	 "location":"Custom House (Jere LGA)",
+	 "sector":"Child Protection",
+	 "image":"/logos/chad.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.21481466,11.86577598 ]
+	 },
+	 "properties": {
+	 "id":55,
+	 "name_of_organization":"SAHEI",
+	 "services_offered":"Protection Monitoring, Non-Food Items distribution",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 4pm",
+	 "contact_phone_number":"Protecion Desk at Muna Camp, 08038135409",
+	 "State":"Borno",
+	 "location":"Farm Center",
+	 "sector":"GBV and Protection",
+	 "image":"/logos/SAHEI.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.25410366,11.87252713 ]
+	 },
+	 "properties": {
+	 "id":56,
+	 "name_of_organization":"SAHEI",
+	 "services_offered":"Protection Monitoring, Non-Food Items distribution",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 4pm",
+	 "contact_phone_number":"Protecion Desk at Muna Camp, 08038135409",
+	 "State":"Borno",
+	 "location":"Muna El-badawe Camp (Jere LGA)",
+	 "sector":"GBV and Protection",
+	 "image":"/logos/SAHEI.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.14445496,11.83627056 ]
+	 },
+	 "properties": {
+	 "id":57,
+	 "name_of_organization":"UNMAS ",
+	 "services_offered":"Risk Education ",
+	 "days_and_hours_of_operation":"9am - 4pm",
+	 "contact_phone_number":"Katrien Nollen, 9039084136/ KatrienN@unops.org",
+	 "State":"Borno",
+	 "location":"MMC",
+	 "sector":"Protection",
+	 "image":"/logos/UNMAS.jpg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.20033073,11.85181118 ]
+	 },
+	 "properties": {
+	 "id":58,
+	 "name_of_organization":"UNMAS ",
+	 "services_offered":"Risk Education ",
+	 "days_and_hours_of_operation":"9am - 4pm",
+	 "contact_phone_number":"Katrien Nollen, 9039084136/ KatrienN@unops.org",
+	 "State":"Borno",
+	 "location":"Jere",
+	 "sector":"Protection",
+	 "image":"/logos/UNMAS.jpg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.68741989,11.53200204 ]
+	 },
+	 "properties": {
+	 "id":59,
+	 "name_of_organization":"UNMAS ",
+	 "services_offered":"Risk Education ",
+	 "days_and_hours_of_operation":"9am - 4pm",
+	 "contact_phone_number":"Katrien Nollen, 9039084136/ KatrienN@unops.org",
+	 "State":"Borno",
+	 "location":"Bama",
+	 "sector":"Protection",
+	 "image":"/logos/UNMAS.jpg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.18506622,12.34014857 ]
+	 },
+	 "properties": {
+	 "id":60,
+	 "name_of_organization":"UNMAS ",
+	 "services_offered":"Risk Education ",
+	 "days_and_hours_of_operation":"9am - 4pm",
+	 "contact_phone_number":"Katrien Nollen, 9039084136/ KatrienN@unops.org",
+	 "State":"Borno",
+	 "location":"Ngala",
+	 "sector":"Protection",
+	 "image":"/logos/UNMAS.jpg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.61588001,12.66648803 ]
+	 },
+	 "properties": {
+	 "id":61,
+	 "name_of_organization":"UNMAS ",
+	 "services_offered":"Risk Education ",
+	 "days_and_hours_of_operation":"9am - 4pm",
+	 "contact_phone_number":"Katrien Nollen, 9039084136/ KatrienN@unops.org",
+	 "State":"Borno",
+	 "location":"Monguno",
+	 "sector":"Protection",
+	 "image":"/logos/UNMAS.jpg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.78333569,11.22542506 ]
+	 },
+	 "properties": {
+	 "id":62,
+	 "name_of_organization":"UNMAS ",
+	 "services_offered":"Risk Education ",
+	 "days_and_hours_of_operation":"9am - 4pm",
+	 "contact_phone_number":"Katrien Nollen, 9039084136/ KatrienN@unops.org",
+	 "State":"Borno",
+	 "location":"Pulka",
+	 "sector":"Protection",
+	 "image":"/logos/UNMAS.jpg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.14794445,11.24554544 ]
+	 },
+	 "properties": {
+	 "id":63,
+	 "name_of_organization":"UNMAS ",
+	 "services_offered":"Risk Education ",
+	 "days_and_hours_of_operation":"9am - 4pm",
+	 "contact_phone_number":"Katrien Nollen, 9039084136/ KatrienN@unops.org",
+	 "State":"Borno",
+	 "location":"Banki",
+	 "sector":"Protection",
+	 "image":"/logos/UNMAS.jpg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.69771957,11.08593301 ]
+	 },
+	 "properties": {
+	 "id":64,
+	 "name_of_organization":"UNMAS ",
+	 "services_offered":"Risk Education ",
+	 "days_and_hours_of_operation":"9am - 4pm",
+	 "contact_phone_number":"Katrien Nollen, 9039084136/ KatrienN@unops.org",
+	 "State":"Borno",
+	 "location":"Gwoza",
+	 "sector":"Protection",
+	 "image":"/logos/UNMAS.jpg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 12.51046658,13.10075457 ]
+	 },
+	 "properties": {
+	 "id":65,
+	 "name_of_organization":"UNMAS ",
+	 "services_offered":"Risk Education ",
+	 "days_and_hours_of_operation":"9am - 4pm",
+	 "contact_phone_number":"Katrien Nollen, 9039084136/ KatrienN@unops.org",
+	 "State":"Borno",
+	 "location":"Damasak ",
+	 "sector":"Protection",
+	 "image":"/logos/UNMAS.jpg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.10039163,11.81091015 ]
+	 },
+	 "properties": {
+	 "id":66,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Julian Briska 08133669563    Dorcas 070084623404   and PAGs",
+	 "State":"Borno",
+	 "location":"Dala (Jere LGA)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.14587116,11.79457954 ]
+	 },
+	 "properties": {
+	 "id":67,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Sumakabonori Gapsiso 09034550903    Hauwa 08032306146    and PAGs",
+	 "State":"Borno",
+	 "location":"Jiddari Polo (Jere Borno)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.16905382,11.86758997 ]
+	 },
+	 "properties": {
+	 "id":68,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Julian Briska 08133669563  Khadijah 08037730108    and PAGs",
+	 "State":"Borno",
+	 "location":"Dalaram (Jere, Borno)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.17655563,11.79915851 ]
+	 },
+	 "properties": {
+	 "id":69,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Amina 07036080201 and PAGs",
+	 "State":"Borno",
+	 "location":"Fori (Jere LGA)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.39336395,11.66123088 ]
+	 },
+	 "properties": {
+	 "id":70,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Salamatu 09034556179 and PAGs",
+	 "State":"Borno",
+	 "location":"Mandarari 1 (Konduga)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.39817047,11.66287002 ]
+	 },
+	 "properties": {
+	 "id":71,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Salamatu 09034556179 and PAGs",
+	 "State":"Borno",
+	 "location":"Mandarari 2 (Konduga)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.41874012,11.65240819 ]
+	 },
+	 "properties": {
+	 "id":72,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Salamatu 09034556179 and PAGs",
+	 "State":"Borno",
+	 "location":"Duari (Kondugua)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.06789398,11.85926616 ]
+	 },
+	 "properties": {
+	 "id":73,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Salamatu 09034556179 and PAGs",
+	 "State":"Borno",
+	 "location":"Shuwari (Konduga)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.40737581,11.66213451 ]
+	 },
+	 "properties": {
+	 "id":74,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Sulieman 07037746757 and PAGs",
+	 "State":"Borno",
+	 "location":"Konduga camp (Konduga)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.39061737,11.66438308 ]
+	 },
+	 "properties": {
+	 "id":75,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Sulieman 07037746757 and PAGs",
+	 "State":"Borno",
+	 "location":"Yandadari Gana (Konduga)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.39158297,11.66188233 ]
+	 },
+	 "properties": {
+	 "id":76,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Sulieman 07037746757 and PAGs",
+	 "State":"Borno",
+	 "location":"Yandanrari  Kura (Konduga)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.41874012,11.65240819 ]
+	 },
+	 "properties": {
+	 "id":77,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Sulieman 07037746757 and PAGs",
+	 "State":"Borno",
+	 "location":"Mashimari (Konduga)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.59886408,11.9245253 ]
+	 },
+	 "properties": {
+	 "id":78,
+	 "name_of_organization":"Terre Des Hommes (TDH)",
+	 "services_offered":"Child Protection",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 5pm",
+	 "contact_phone_number":"Ijaktu Samuel, 08035592345",
+	 "State":"Borno",
+	 "location":"Mafa",
+	 "sector":"Child Protection",
+	 "image":"/logos/terre.jpg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.60321999,11.92591094 ]
+	 },
+	 "properties": {
+	 "id":79,
+	 "name_of_organization":"Center for Community Health and Development (CHAD)",
+	 "services_offered":"Casemanagement and Psychosocial Support",
+	 "days_and_hours_of_operation":"Monday - Friday 8am - 6pm",
+	 "contact_phone_number":"Ruqaiyat Adam Yusuf, 08169596983",
+	 "State":"Borno",
+	 "location":"Mafa IDP camps and Mafa Host Community",
+	 "sector":"Child Protection",
+	 "image":"/logos/chad.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.59890699,11.9209142 ]
+	 },
+	 "properties": {
+	 "id":80,
+	 "name_of_organization":"ACTED",
+	 "services_offered":"Shelter, NFI and CCCM",
+	 "days_and_hours_of_operation":"Monday - Friday 8.30am - 5.30pm",
+	 "contact_phone_number":"Hyelni Madau, Shelter Project Coordinator",
+	 "State":"Borno",
+	 "location":"Mafa",
+	 "sector":"Protection",
+	 "image":"/logos/acted.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.59710455,11.92727558 ]
+	 },
+	 "properties": {
+	 "id":81,
+	 "name_of_organization":"International Organization for Migration (IOM)",
+	 "services_offered":"CCCM, Shelter, DTM, NFI",
+	 "days_and_hours_of_operation":"Monday - Saturday 8am - 4pm",
+	 "contact_phone_number":"Aminu Aliyu Ibrahim, aminualiyu@gmail.com",
+	 "State":"Borno",
+	 "location":"Mafa (GGASS Camp and Host Community)",
+	 "sector":"Protection",
+	 "image":"/logos/iom.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.59774828,11.91870973 ]
+	 },
+	 "properties": {
+	 "id":82,
+	 "name_of_organization":"PLAN International Nigeria",
+	 "services_offered":"Nutrition and Protection",
+	 "days_and_hours_of_operation":"OTP - Tuesdays to Thursdays 8am to 2pm, Stabilization Center - 24 hour service",
+	 "contact_phone_number":"Emmanuel Aaron Nuhu, Sc Coordinator, 08165884730, emmanuel.nuhu@plan-international.org; Lisa Nambam Daspan, GBV case worker, 08035307033, nanbeeton@gmail.com",
+	 "State":"Borno",
+	 "location":"Mafa LGA - Nwom",
+	 "sector":"Nutrition and Protection",
+	 "image":"/logos/plan.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.60377789,11.92141808 ]
+	 },
+	 "properties": {
+	 "id":83,
+	 "name_of_organization":"PLAN International Nigeria",
+	 "services_offered":"Nutrition and Protection",
+	 "days_and_hours_of_operation":"OTP - Tuesdays to Thursdays 8am to 2pm, Stabilization Center - 24 hour service",
+	 "contact_phone_number":"Emmanuel Aaron Nuhu, Sc Coordinator, 08165884730, emmanuel.nuhu@plan-international.org; Lisa Nambam Daspan, GBV case worker, 08035307033, nanbeeton@gmail.com",
+	 "State":"Borno",
+	 "location":"Mafa LGA -IDP camp B1",
+	 "sector":"Nutrition and Protection",
+	 "image":"/logos/plan.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.59259844,11.9229297 ]
+	 },
+	 "properties": {
+	 "id":84,
+	 "name_of_organization":"PLAN International Nigeria",
+	 "services_offered":"Nutrition and Protection",
+	 "days_and_hours_of_operation":"OTP - Tuesdays to Thursdays 8am to 2pm, Stabilization Center - 24 hour service",
+	 "contact_phone_number":"Emmanuel Aaron Nuhu, Sc Coordinator, 08165884730, emmanuel.nuhu@plan-international.org; Lisa Nambam Daspan, GBV case worker, 08035307033, nanbeeton@gmail.com",
+	 "State":"Borno",
+	 "location":"Mafa LGA -IDP camp B2",
+	 "sector":"Nutrition and Protection",
+	 "image":"/logos/plan.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.60079527,11.92857723 ]
+	 },
+	 "properties": {
+	 "id":85,
+	 "name_of_organization":"PLAN International Nigeria",
+	 "services_offered":"Nutrition and Protection",
+	 "days_and_hours_of_operation":"OTP - Tuesdays to Thursdays 8am to 2pm, Stabilization Center - 24 hour service",
+	 "contact_phone_number":"Emmanuel Aaron Nuhu, Sc Coordinator, 08165884730, emmanuel.nuhu@plan-international.org; Lisa Nambam Daspan, GBV case worker, 08035307033, nanbeeton@gmail.com",
+	 "State":"Borno",
+	 "location":"Bulamari, Mafa LGA",
+	 "sector":"Nutrition and Protection",
+	 "image":"/logos/plan.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.62253189,12.67433871 ]
+	 },
+	 "properties": {
+	 "id":86,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Protection Monitoring Activities and Responses",
+	 "days_and_hours_of_operation":"Monday to Friday, 8 to 4pm",
+	 "contact_phone_number":"Baba Shahu Usman, Protection Monitor, babas@giscor.org, 7085807172 ",
+	 "State":"Borno",
+	 "location":"Monguno",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.6248,12.6714 ]
+	 },
+	 "properties": {
+	 "id":87,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Timothy 07034825494   and PAGs",
+	 "State":"Borno",
+	 "location":"Ganari (Monguno)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.6193,12.6639 ]
+	 },
+	 "properties": {
+	 "id":88,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Timothy 07034825494   and PAGs",
+	 "State":"Borno",
+	 "location":"Abbari (Monguno)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.62644792,12.66560874 ]
+	 },
+	 "properties": {
+	 "id":89,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Timothy 07034825494   and PAGs",
+	 "State":"Borno",
+	 "location":"Stadium Camp",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.1182,11.7902 ]
+	 },
+	 "properties": {
+	 "id":90,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Timothy 07034825494   and PAGs",
+	 "State":"Borno",
+	 "location":"Bakkasi",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.14876795,11.82576964 ]
+	 },
+	 "properties": {
+	 "id":91,
+	 "name_of_organization":"UNHCR/National Human Rights Commission (NHRC)",
+	 "services_offered":"Protection and Human Rights Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"NHRC Acting Head: (Barrister Jummai Mshelia) 08067833036",
+	 "State":"Borno",
+	 "location":"MMC",
+	 "sector":"Protection ",
+	 "image":"/logos/NHRC.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.18831444,11.83971477 ]
+	 },
+	 "properties": {
+	 "id":92,
+	 "name_of_organization":"UNHCR/National Human Rights Commission (NHRC)",
+	 "services_offered":"Protection and Human Rights Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"NHRC Acting Head: (Barrister Jummai Mshelia) 08067833036",
+	 "State":"Borno",
+	 "location":"Jere",
+	 "sector":"Protection ",
+	 "image":"/logos/NHRC.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.69626045,11.52064858 ]
+	 },
+	 "properties": {
+	 "id":93,
+	 "name_of_organization":"UNHCR/National Human Rights Commission (NHRC)",
+	 "services_offered":"Protection and Human Rights Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"NHRC Acting Head: (Barrister Jummai Mshelia) 08067833036",
+	 "State":"Borno",
+	 "location":"Bama",
+	 "sector":"Protection ",
+	 "image":"/logos/NHRC.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.18783426,12.34327187 ]
+	 },
+	 "properties": {
+	 "id":94,
+	 "name_of_organization":"UNHCR/National Human Rights Commission (NHRC)",
+	 "services_offered":"Protection and Human Rights Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"NHRC Acting Head: (Barrister Jummai Mshelia) 08067833036",
+	 "State":"Borno",
+	 "location":"Ngala",
+	 "sector":"Protection ",
+	 "image":"/logos/NHRC.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.61918449,12.69267694 ]
+	 },
+	 "properties": {
+	 "id":95,
+	 "name_of_organization":"UNHCR/National Human Rights Commission (NHRC)",
+	 "services_offered":"Protection and Human Rights Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"NHRC Acting Head: (Barrister Jummai Mshelia) 08067833036",
+	 "State":"Borno",
+	 "location":"Monguno",
+	 "sector":"Protection ",
+	 "image":"/logos/NHRC.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.78930092,11.22458317 ]
+	 },
+	 "properties": {
+	 "id":96,
+	 "name_of_organization":"UNHCR/National Human Rights Commission (NHRC)",
+	 "services_offered":"Protection and Human Rights Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"NHRC Acting Head: (Barrister Jummai Mshelia) 08067833036",
+	 "State":"Borno",
+	 "location":"Pulka",
+	 "sector":"Protection ",
+	 "image":"/logos/NHRC.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.14369583,11.24773419 ]
+	 },
+	 "properties": {
+	 "id":97,
+	 "name_of_organization":"UNHCR/National Human Rights Commission (NHRC)",
+	 "services_offered":"Protection and Human Rights Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"NHRC Acting Head: (Barrister Jummai Mshelia) 08067833036",
+	 "State":"Borno",
+	 "location":"Banki",
+	 "sector":"Protection ",
+	 "image":"/logos/NHRC.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.68759155,11.08334295 ]
+	 },
+	 "properties": {
+	 "id":98,
+	 "name_of_organization":"UNHCR/National Human Rights Commission (NHRC)",
+	 "services_offered":"Protection and Human Rights Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"NHRC Acting Head: (Barrister Jummai Mshelia) 08067833036",
+	 "State":"Borno",
+	 "location":"Gwoza",
+	 "sector":"Protection ",
+	 "image":"/logos/NHRC.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 12.50874996,13.10953208 ]
+	 },
+	 "properties": {
+	 "id":99,
+	 "name_of_organization":"UNHCR/National Human Rights Commission (NHRC)",
+	 "services_offered":"Protection and Human Rights Monitoring ",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am to 6:00pm)",
+	 "contact_phone_number":"NHRC Acting Head: (Barrister Jummai Mshelia) 08067833036",
+	 "State":"Borno",
+	 "location":"Damasak ",
+	 "sector":"Protection ",
+	 "image":"/logos/NHRC.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.608284,12.67584601 ]
+	 },
+	 "properties": {
+	 "id":100,
+	 "name_of_organization":"UNHCR/INTERSOS ",
+	 "services_offered":"CCCM & Protection Monitoring",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am  to 6:00pm)",
+	 "contact_phone_number":"Programme Manager: Irene Mugabo (07086180111). ",
+	 "State":"Borno",
+	 "location":"Monguno",
+	 "sector":"Protection ",
+	 "image":"/logos/intersos.jpeg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.18611765,12.33939394 ]
+	 },
+	 "properties": {
+	 "id":101,
+	 "name_of_organization":"UNHCR/INTERSOS ",
+	 "services_offered":"CCCM & Protection Monitoring",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am  to 6:00pm)",
+	 "contact_phone_number":"Programme Manager: Irene Mugabo (07086180111). ",
+	 "State":"Borno",
+	 "location":"Ngala",
+	 "sector":"Protection ",
+	 "image":"/logos/intersos.jpeg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 12.512784,13.10551954 ]
+	 },
+	 "properties": {
+	 "id":102,
+	 "name_of_organization":"UNHCR/INTERSOS ",
+	 "services_offered":"CCCM & Protection Monitoring",
+	 "days_and_hours_of_operation":"7 Days a Week- 11 Hours (8:00am  to 6:00pm)",
+	 "contact_phone_number":"Programme Manager: Irene Mugabo (07086180111). ",
+	 "State":"Borno",
+	 "location":"Damasak ",
+	 "sector":"Protection ",
+	 "image":"/logos/intersos.jpeg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.18794155,12.33784275 ]
+	 },
+	 "properties": {
+	 "id":103,
+	 "name_of_organization":"Family Health International 360\n",
+	 "services_offered":"GBV Case management and Health Services\n",
+	 "days_and_hours_of_operation":"Mondays to Thursdays -8:00am – 5:30pm\nFridays- 8:00am - 2:00pm \n",
+	 "contact_phone_number":"Dr Chukwudi Agubosim for health\nLadi Yunusa Galadima for protection\nlyunusa@ng.fhi360.org\n",
+	 "State":"Borno",
+	 "location":"Arabic and International Camp (Ngala)",
+	 "sector":"Protection and Health",
+	 "image":"/logos/fhi360.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.18388605,12.34670956 ]
+	 },
+	 "properties": {
+	 "id":104,
+	 "name_of_organization":"Action Initiative for peace and Development (AIPD)\n",
+	 "services_offered":"Shelter and Protection",
+	 "days_and_hours_of_operation":"Monday to Friday \n8:00am – 4:00pm\n",
+	 "contact_phone_number":"For Shelter – Amos H Mbaya, 08133349458, Amozy56@gmail.com\nFor Protection – Grace Mark, Protection Monitor,Gracemark2636@gmail.com\n",
+	 "State":"Borno",
+	 "location":"Arabic and International Camp (Ngala)",
+	 "sector":"Protection",
+	 "image":""
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.1821909,12.34442476 ]
+	 },
+	 "properties": {
+	 "id":105,
+	 "name_of_organization":"INTERSOS",
+	 "services_offered":"Food Security, Protecton and Camp Management",
+	 "days_and_hours_of_operation":"Monday to Friday\n8:00am – 5:00pm\n",
+	 "contact_phone_number":"Shukurate Lawal, Protection officer, 08060535344\nFSL Field Coordinator, Fsl.ngala-nigeria@intersos.org\nAbubakar Shettima kullima, Reception center officer, 08032416293, Kullima201@gmail.com\n",
+	 "State":"Borno",
+	 "location":"Arabic and International Camp (Ngala)",
+	 "sector":"Food Scurity, Protection",
+	 "image":"/logos/intersos.jpeg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.20944214,12.36473574 ]
+	 },
+	 "properties": {
+	 "id":106,
+	 "name_of_organization":"International Organization for Migration (IOM)",
+	 "services_offered":"CCCM, Shelter, DTM, NFI, MHPSS",
+	 "days_and_hours_of_operation":"Monday - Saturday 8am - 4:30pm",
+	 "contact_phone_number":"Samuel Akaehomem\n07062325233",
+	 "State":"Borno",
+	 "location":"International camp, Arabic camp, Gamboru host community, Ngala host community",
+	 "sector":"Protection",
+	 "image":"/logos/iom.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.2062664,12.3706883 ]
+	 },
+	 "properties": {
+	 "id":107,
+	 "name_of_organization":"Mercy Corps",
+	 "services_offered":"Protection; GBV awareness compaign",
+	 "days_and_hours_of_operation":"Monday to Thursday\n8:00am – 4:00pm\n",
+	 "contact_phone_number":"Abdulsalam Goni- 08033190832\nRacheal Haruna- 08067431568\n",
+	 "State":"Borno",
+	 "location":"Arabic camp, International school camp, Gamboru Ngala host community",
+	 "sector":"Protection, Liveliood",
+	 "image":"/logos/mercy.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 14.1878,12.345 ]
+	 },
+	 "properties": {
+	 "id":108,
+	 "name_of_organization":"UNICEF",
+	 "services_offered":"Health, Chld protection and WASH",
+	 "days_and_hours_of_operation":"Protection: Monday to Saturday; 8:00hrs – 17:00hrs\nHealth; 24hours service\nWASH; 7days in a week 8hours daily\n",
+	 "contact_phone_number":"PROTECTION: Hussaini Ahmed Jiddah, 08144246631, Ahmedjiddah123@gmail.com\nHEALTH: Dr Luku Pulaluka, 08106223545\n",
+	 "State":"Borno",
+	 "location":"Gamboru community, Arabic camp and International camp",
+	 "sector":"WASH CHILD PROTECTION\nHEALTH\n",
+	 "image":"/logos/unicef.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.1007,11.8447 ]
+	 },
+	 "properties": {
+	 "id":109,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Protection Monitoring Activities and Responses",
+	 "days_and_hours_of_operation":"Monday to Friday, 8 to 4pm",
+	 "contact_phone_number":"Bura Wakil, Protection Monitor, bura@giscor.org, 08026832526 ",
+	 "State":"Borno",
+	 "location":"Teachers Village (TVC) Camp",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.1182,11.7902 ]
+	 },
+	 "properties": {
+	 "id":110,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Protection Monitoring Activities and Responses",
+	 "days_and_hours_of_operation":"Monday to Friday, 8 to 4pm",
+	 "contact_phone_number":"Yahi Yama, Protection Monitor, yahi@giscor.org, 07060698523",
+	 "State":"Borno",
+	 "location":"Bakkassi Camp",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.22426677,11.77979188 ]
+	 },
+	 "properties": {
+	 "id":111,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Protection Monitoring Activities and Responses",
+	 "days_and_hours_of_operation":"Monday to Friday, 8 to 4pm",
+	 "contact_phone_number":"Mubaraq Abdulrazaq Umar, Protection Monitor, mubaraq@giscor.org 08060855688",
+	 "State":"Borno",
+	 "location":"Dalori 1 Camp",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.0796957,11.90672127 ]
+	 },
+	 "properties": {
+	 "id":112,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Protection Monitoring Activities and Responses",
+	 "days_and_hours_of_operation":"Monday to Friday, 8 to 4pm",
+	 "contact_phone_number":"Dorcas Iliya, Protection Monitor, Dorcas@giscor.org 07060636832",
+	 "State":"Borno",
+	 "location":"Gubio Camp",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.1185,11.8258 ]
+	 },
+	 "properties": {
+	 "id":113,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Protection Monitoring Activities and Responses",
+	 "days_and_hours_of_operation":"Monday to Friday, 8 to 4pm",
+	 "contact_phone_number":"Madu Inusa, Protection Monitor, madu@giscor.org 07081314258",
+	 "State":"Borno",
+	 "location":"NYSC Camp",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.18062186,11.87730428 ]
+	 },
+	 "properties": {
+	 "id":114,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Protection Monitoring Activities and Responses",
+	 "days_and_hours_of_operation":"Monday to Friday, 8 to 4pm",
+	 "contact_phone_number":"Soon to be available",
+	 "State":"Borno",
+	 "location":"Madinatu Camp",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.62616897,12.66445728 ]
+	 },
+	 "properties": {
+	 "id":115,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Protection Monitoring Activities and Responses",
+	 "days_and_hours_of_operation":"Monday to Friday, 8 to 4pm",
+	 "contact_phone_number":"Soon to be available",
+	 "State":"Borno",
+	 "location":"Stadium Camp",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.18474,10.06416 ]
+	 },
+	 "properties": {
+	 "id":116,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Anthony Jonathan 08068830941, Izu obilor 08037412584 and PAGs",
+	 "State":"Adamawa",
+	 "location":"Majekin(Maiha)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.21863346,10.12309161 ]
+	 },
+	 "properties": {
+	 "id":117,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Anthony Jonathan 08068830941, Hauwa 08032306146   ",
+	 "State":"Adamawa",
+	 "location":"Pakka (Maiha)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.30848333,10.557745 ]
+	 },
+	 "properties": {
+	 "id":118,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Sumakabonori Gapsiso 09034550903, Amina 07036080201, and PAGs",
+	 "State":"Adamawa",
+	 "location":"Tsukumu (Michika)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.30577167,10.16222 ]
+	 },
+	 "properties": {
+	 "id":119,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Anthony Jonathan 08068830941, Dorcas Kingsley 07084623404 and PAGs.",
+	 "State":"Adamawa",
+	 "location":"Gella (Mubi South)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.22149,10.151095 ]
+	 },
+	 "properties": {
+	 "id":120,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Anthony Jonathan 08068830941, Amina 07036080201, and PAGs",
+	 "State":"Adamawa",
+	 "location":"Kagii (Mubi South)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.26690616,10.27017784 ]
+	 },
+	 "properties": {
+	 "id":121,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Julian Briska 08133669563, Dorcas 070084623404 and PAGs",
+	 "State":"Adamawa",
+	 "location":"Digil (Mubi North)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.30769333,10.32223167 ]
+	 },
+	 "properties": {
+	 "id":122,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Julian Briska 08133669563, Amina 07036080201",
+	 "State":"Adamawa",
+	 "location":"Vimtim (Mubi North)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 12.832344,10.18709 ]
+	 },
+	 "properties": {
+	 "id":123,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Sumakabonori Gapsiso 09034550903, Hauwa 08032306146 and PAGs",
+	 "State":"Adamawa",
+	 "location":"Kuma (Hong)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.296473,10.674665 ]
+	 },
+	 "properties": {
+	 "id":124,
+	 "name_of_organization":"International Rescue Committee",
+	 "services_offered":"Protection",
+	 "days_and_hours_of_operation":"Monday - Thursday 8.30am - 4.00pm, Friday 8:30am-2:00pm",
+	 "contact_phone_number":"Julian Briska 08133669563  Khadijah 08037730108 and PAGs",
+	 "State":"Adamawa",
+	 "location":"Kubur-Shosho (Michika)",
+	 "sector":"Protection",
+	 "image":"/logos/irc.png"
+	 }
+   },
+   {
+	 "type": "Feature",
+	 "geometry": {
+		"type": "Point",
+		"coordinates":  [ 13.23894382,11.76958289 ]
+	 },
+	 "properties": {
+	 "id":125,
+	 "name_of_organization":"GISCOR (UNHCR partner)",
+	 "services_offered":"Protection Monitoring Activities and Responses",
+	 "days_and_hours_of_operation":"Monday to Friday, 8 to 4pm",
+	 "contact_phone_number":"Mubaraq Abdulrazaq Umar, Protection Monitor, mubaraq@giscor.org 08060855688",
+	 "State":"Borno",
+	 "location":"Dalori 2 Camp",
+	 "sector":"Protection",
+	 "image":"/logos/giscor.svg"
+	 }
+   }
+ ]
+ }

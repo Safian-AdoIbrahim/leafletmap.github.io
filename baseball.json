@@ -1,0 +1,695 @@
+{
+	"type": "FeatureCollection",
+
+	"features": [{
+		"type": "Feature",
+		"properties": {
+			"ID": "1",
+			"League": "NL",
+			"lat": 33.445278,
+			"long": -112.066667,
+			"Team": "Arizona Diamondbacks",
+			"City": "Phoenix, Arizona",
+			"Stadium": "Chase Field",
+			"Capacity": "48570",
+			"Address": "401 East Jefferson Street",
+			"City2": " Phoenix",
+			"State-Zip": " Arizona 85001",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_ari_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Diamondbacks",
+			"Website": "http:\/\/arizona.diamondbacks.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-112.066667, 33.445278]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "2",
+			"League": "NL",
+			"lat": 33.735206,
+			"long": -84.389642,
+			"Team": "Atlanta Braves",
+			"City": "Atlanta, Georgia",
+			"Stadium": "Turner Field",
+			"Capacity": "50091",
+			"Address": "755 Hank Aaron Drive SE",
+			"City2": " Atlanta",
+			"State-Zip": " Georgia 30315",
+			"Logo": "https://arsenaldirect.arsenal.com/medias/arsenal-crest.png?context=bWFzdGVyfGltYWdlc3wxOTM4NXxpbWFnZS9wbmd8aDRiL2hmNC85MDY1ODQxMDk4NzgyL2Fyc2VuYWwtY3Jlc3QucG5nfGY0YTFjOTBjN2NiNmFkMmNkYTg1YTY5YzA0NzM5NWI0ZjgyZTA5MjFkYzE0ZDZlZmJlNjkyYTU1NzQwMjZlYjg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Braves",
+			"Website": "http:\/\/atlanta.braves.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-84.389642, 33.735206]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "3",
+			"League": "AL",
+			"lat": 39.283642,
+			"long": -76.621803,
+			"Team": "Baltimore Orioles",
+			"City": "Baltimore, Maryland",
+			"Stadium": "Oriole Park at Camden Yards",
+			"Capacity": "48262",
+			"Address": "333 West Camden Street",
+			"City2": " Baltimore",
+			"State-Zip": " Maryland 21201",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_bal_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Orioles",
+			"Website": "http:\/\/baltimore.orioles.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-76.621803, 39.283642]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "4",
+			"League": "AL",
+			"lat": 42.346350,
+			"long": -71.097611,
+			"Team": "Boston Red Sox",
+			"City": "Boston, Massachusetts",
+			"Stadium": "Fenway Park",
+			"Capacity": "38800",
+			"Address": "Four Yawkey Way",
+			"City2": " Boston",
+			"State-Zip": " Massachusetts 02215",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_bos_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Red Sox",
+			"Website": "http:\/\/boston.redsox.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-71.097611, 42.34635]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "5",
+			"League": "NL",
+			"lat": 41.948036,
+			"long": -87.655681,
+			"Team": "Chicago Cubs",
+			"City": "Chicago, Illinois",
+			"Stadium": "Wrigley Field",
+			"Capacity": "41100",
+			"Address": "1060 West Addison Street",
+			"City2": " Chicago",
+			"State-Zip": " Illinois 60613",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_chc_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Cubs",
+			"Website": "http:\/\/chicago.cubs.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-87.655681, 41.948036]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "6",
+			"League": "AL",
+			"lat": 41.830081,
+			"long": -87.634047,
+			"Team": "Chicago White Sox",
+			"City": "Chicago, Illinois",
+			"Stadium": "U.S. Cellular Field",
+			"Capacity": "40600",
+			"Address": "333 West 35th Street",
+			"City2": " Chicago",
+			"State-Zip": " Illinois 60616",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_cws_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "White Sox",
+			"Website": "http:\/\/chicago.whitesox.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-87.634047, 41.830081]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "7",
+			"League": "NL",
+			"lat": 39.097392,
+			"long": -84.506858,
+			"Team": "Cincinnati Reds",
+			"City": "Cincinnati, Ohio",
+			"Stadium": "Great American Ball Park",
+			"Capacity": "42000",
+			"Address": "100 Main Street",
+			"City2": " Cincinnati",
+			"State-Zip": " Ohio 45202",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_cin_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Reds",
+			"Website": "http:\/\/cincinnati.reds.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-84.506858, 39.097392]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "8",
+			"League": "AL",
+			"lat": 41.495703,
+			"long": -81.685283,
+			"Team": "Cleveland Indians",
+			"City": "Cleveland, Ohio",
+			"Stadium": "Progressive Field",
+			"Capacity": "45199",
+			"Address": "2401 Ontario Street",
+			"City2": " Cleveland",
+			"State-Zip": " Ohio 44115",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_cle_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Indians",
+			"Website": "http:\/\/cleveland.indians.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-81.685283, 41.495703]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "9",
+			"League": "NL",
+			"lat": 39.755872,
+			"long": -104.994172,
+			"Team": "Colorado Rockies",
+			"City": "Denver, Colorado",
+			"Stadium": "Coors Field",
+			"Capacity": "50200",
+			"Address": "2001 Blake Street",
+			"City2": " Denver",
+			"State-Zip": " Colorado 80204",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_col_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Rockies",
+			"Website": "http:\/\/colorado.rockies.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-104.994172, 39.755872]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "10",
+			"League": "AL",
+			"lat": 42.339281,
+			"long": -83.048867,
+			"Team": "Detroit Tigers",
+			"City": "Detroit, Michigan",
+			"Stadium": "Comerica Park",
+			"Capacity": "41070",
+			"Address": "2100 Woodward Avenue",
+			"City2": " Detroit",
+			"State-Zip": " Michigan 48201",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_det_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Tigers",
+			"Website": "http:\/\/detroit.tigers.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-83.048867, 42.339281]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "11",
+			"League": "AL",
+			"lat": 29.756844,
+			"long": -95.355417,
+			"Team": "Houston Astros",
+			"City": "Houston, Texas",
+			"Stadium": "Minute Maid Park",
+			"Capacity": "41000",
+			"Address": "501 Crawford Street",
+			"City2": " Houston",
+			"State-Zip": " Texas 77002",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_hou_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Astros",
+			"Website": "http:\/\/houston.astros.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-95.355417, 29.756844]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "12",
+			"League": "AL",
+			"lat": 39.051358,
+			"long": -94.480703,
+			"Team": "Kansas City Royals",
+			"City": "Kansas City, Missouri",
+			"Stadium": "Kauffman Stadium",
+			"Capacity": "40600",
+			"Address": "1 Royal Way",
+			"City2": " Kansas City",
+			"State-Zip": " MO 64129",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_kc_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Royals",
+			"Website": "http:\/\/kansascity.royals.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-94.480703, 39.051358]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "13",
+			"League": "AL",
+			"lat": 33.800031,
+			"long": -117.883014,
+			"Team": "Los Angeles Angels of Anaheim",
+			"City": "Anaheim, California",
+			"Stadium": "Angel Stadium of Anaheim",
+			"Capacity": "45000",
+			"Address": "2000 Gene Autry Way",
+			"City2": " Anaheim",
+			"State-Zip": " California 92806",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_ana_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Angels",
+			"Website": "http:\/\/losangeles.angels.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-117.883014, 33.800031]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "14",
+			"League": "NL",
+			"lat": 34.073561,
+			"long": -118.240122,
+			"Team": "Los Angeles Dodgers",
+			"City": "Los Angeles, California",
+			"Stadium": "Dodger Stadium",
+			"Capacity": "56000",
+			"Address": "1000 Elysian Park Ave",
+			"City2": " Los Angeles",
+			"State-Zip": " California 90012",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_la_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Dodgers",
+			"Website": "http:\/\/losangeles.dodgers.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-118.240122, 34.073561]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "15",
+			"League": "NL",
+			"lat": 25.778056,
+			"long": -80.219722,
+			"Team": "Miami Marlins",
+			"City": "Miami Gardens, Florida",
+			"Stadium": "Marlins Park",
+			"Capacity": "36742",
+			"Address": "501 Marlins Way",
+			"City2": " Miami",
+			"State-Zip": " Florida 33125",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_mia_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Marlins",
+			"Website": "http:\/\/florida.marlins.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-80.219722, 25.778056]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "16",
+			"League": "NL",
+			"lat": 43.028350,
+			"long": -87.971125,
+			"Team": "Milwaukee Brewers",
+			"City": "Milwaukee, Wisconsin",
+			"Stadium": "Miller Park (Milwaukee)",
+			"Capacity": "43000",
+			"Address": "201 South Forty-sixth Street",
+			"City2": " Milwaukee",
+			"State-Zip": " Wisconsin 53201",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_mil_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Brewers",
+			"Website": "http:\/\/milwaukee.brewers.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-87.971125, 43.02835]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "17",
+			"League": "AL",
+			"lat": 44.981667,
+			"long": -93.278333,
+			"Team": "Minnesota Twins",
+			"City": "Minneapolis, Minnesota",
+			"Stadium": "Target Field",
+			"Capacity": "39504",
+			"Address": "1 Twins Way",
+			"City2": " Minneapolis",
+			"State-Zip": " Minnesota",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_min_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Twins",
+			"Website": "http:\/\/minnesota.twins.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-93.278333, 44.981667]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "18",
+			"League": "NL",
+			"lat": 40.756867,
+			"long": -73.845530,
+			"Team": "New York Mets",
+			"City": "Flushing, New York",
+			"Stadium": "Citi Field",
+			"Capacity": "41800",
+			"Address": "126th St. Roosevelt Avenue",
+			"City2": "Flushing",
+			"State-Zip": " New York 11368",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_nym_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Mets",
+			"Website": "http:\/\/newyork.mets.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-73.84553, 40.756867]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "19",
+			"League": "AL",
+			"lat": 40.829160,
+			"long": -73.926389,
+			"Team": "New York Yankees",
+			"City": "New York City, New York",
+			"Stadium": "Yankee Stadium",
+			"Capacity": "50086",
+			"Address": "East 161st Street & River Avenue",
+			"City2": " Bronx",
+			"State-Zip": " New York 10451",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_nyy_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Yankees",
+			"Website": "http:\/\/newyork.yankees.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-73.926389, 40.82916]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "20",
+			"League": "AL",
+			"lat": 37.751613,
+			"long": -122.200509,
+			"Team": "Oakland Athletics",
+			"City": "Oakland, California",
+			"Stadium": "O.co Coliseum",
+			"Capacity": "56057",
+			"Address": "7000 Coliseum Way",
+			"City2": " Oakland",
+			"State-Zip": " California 94621",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_oak_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Athletics",
+			"Website": "http:\/\/oakland.athletics.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.2005093, 37.7516135]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "21",
+			"League": "NL",
+			"lat": 39.905733,
+			"long": -75.166525,
+			"Team": "Philadelphia Phillies",
+			"City": "Philadelphia, Pennsylvania",
+			"Stadium": "Citizens Bank Park",
+			"Capacity": "43300",
+			"Address": "One Citizens Bank Way",
+			"City2": " Philadelphia",
+			"State-Zip": " Pennsylvania 19148-5248",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_phi_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Phillies",
+			"Website": "http:\/\/philadelphia.phillies.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-75.166525, 39.905733]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "22",
+			"League": "NL",
+			"lat": 40.446986,
+			"long": -80.005994,
+			"Team": "Pittsburgh Pirates",
+			"City": "Pittsburgh, Pennsylvania",
+			"Stadium": "PNC Park",
+			"Capacity": "38500",
+			"Address": "115 Federal St.",
+			"City2": " Pittsburgh",
+			"State-Zip": " Pennsylvania 15212",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_pit_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Pirates",
+			"Website": "http:\/\/pittsburgh.pirates.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-80.005994, 40.446986]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "23",
+			"League": "NL",
+			"lat": 32.707467,
+			"long": -117.156989,
+			"Team": "San Diego Padres",
+			"City": "San Diego, California",
+			"Stadium": "Petco Park",
+			"Capacity": "42445",
+			"Address": "19 Tony Gwynn Way",
+			"City2": " San Diego",
+			"State-Zip": " California 92101",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_sd_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Padres",
+			"Website": "http:\/\/sandiego.padres.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-117.156989, 32.707467]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "24",
+			"League": "NL",
+			"lat": 37.778372,
+			"long": -122.389689,
+			"Team": "San Francisco Giants",
+			"City": "San Francisco, California",
+			"Stadium": "AT&T Park",
+			"Capacity": "41500",
+			"Address": "24 Willie Mays Plaza",
+			"City2": " San Francisco",
+			"State-Zip": " California 94107",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_sf_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Giants",
+			"Website": "http:\/\/sanfrancisco.giants.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.389689, 37.778372]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "25",
+			"League": "AL",
+			"lat": 47.591392,
+			"long": -122.331861,
+			"Team": "Seattle Mariners",
+			"City": "Seattle, Washington",
+			"Stadium": "Safeco Field",
+			"Capacity": "47100",
+			"Address": "1516 First Avenue S",
+			"City2": " Seattle",
+			"State-Zip": " Washington 98134",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_sea_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Mariners",
+			"Website": "http:\/\/seattle.mariners.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.331861, 47.591392]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "26",
+			"League": "NL",
+			"lat": 38.622500,
+			"long": -90.193056,
+			"Team": "St. Louis Cardinals",
+			"City": "St. Louis, Missouri",
+			"Stadium": "Busch Stadium",
+			"Capacity": "43975",
+			"Address": "700 Clark Street",
+			"City2": " St. Louis",
+			"State-Zip": " MO 63102",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_stl_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Cardinals",
+			"Website": "http:\/\/stlouis.cardinals.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-90.193056, 38.6225]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "27",
+			"League": "AL",
+			"lat": 27.768317,
+			"long": -82.653381,
+			"Team": "Tampa Bay Rays",
+			"City": "St. Petersburg, Florida",
+			"Stadium": "Tropicana Field",
+			"Capacity": "43500",
+			"Address": "1 Tropicana Drive",
+			"City2": " St. Petersburg",
+			"State-Zip": " Florida 33705",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_tb_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Rays",
+			"Website": "http:\/\/tampabay.rays.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-82.653381, 27.768317]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "28",
+			"League": "AL",
+			"lat": 32.751461,
+			"long": -97.082847,
+			"Team": "Texas Rangers",
+			"City": "Arlington, Texas",
+			"Stadium": "Rangers Ballpark in Arlington",
+			"Capacity": "49000",
+			"Address": "1000 Ballpark Way",
+			"City2": " Arlington",
+			"State-Zip": " Texas 76011",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_tex_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Rangers",
+			"Website": "http:\/\/texas.rangers.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-97.082847, 32.751461]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "29",
+			"League": "AL",
+			"lat": 43.641300,
+			"long": -79.389214,
+			"Team": "Toronto Blue Jays",
+			"City": "Toronto, Ontario",
+			"Stadium": "Rogers Centre",
+			"Capacity": "49539",
+			"Address": "1 Blue Jays Way",
+			"City2": " Toronto",
+			"State-Zip": " Ontario M5V 1J3",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_tor_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/al_75x75.png",
+			"Name": "Blue Jays",
+			"Website": "http:\/\/toronto.bluejays.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-79.389214, 43.6413]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"ID": "30",
+			"League": "NL",
+			"lat": 38.872778,
+			"long": -77.007500,
+			"Team": "Washington Nationals",
+			"City": "Washington, D.C.",
+			"Stadium": "Nationals Park",
+			"Capacity": "41888",
+			"Address": "1500 South Capitol St SE",
+			"City2": " Washington",
+			"State-Zip": " D.C. 20003",
+			"Logo": "http:\/\/mlb.mlb.com\/mlb\/images\/team_logos\/logo_was_79x76.jpg",
+			"LeagueLogo": "http:\/\/mlb.mlb.com\/mlb\/images\/nl_75x75.png",
+			"Name": "Nationals",
+			"Website": "http:\/\/washington.nationals.mlb.com"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-77.0075, 38.872778]
+		}
+	}]
+}

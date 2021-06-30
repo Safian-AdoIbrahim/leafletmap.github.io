@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GeoJSON Example</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  
+  <style>
+    #wrapper {
+      margin: 0 auto;
+      width: 100%;
+    }
+    
+    #panel{
+     float: left;
+      width: 100%;
+      height:50px;
+    background-color: #175B81;
+    color:white;
+    }
+    
+    #map {
+      float: left;
+      width: 80%;
+      height:600px;
+    }
+    
+    .sidebar {
+      float: left;
+      width: 20%;
+      height:600px;
+       background-color: white;
+       color: #175B81;
+    }
+    
+    #footer {
+    float: left;
+    background-color: #175B81;
+    color: white;
+    width: 100%;
+    height:25px
+    }
+    
+    .text-labels     {
+      font-weight: bold;
+      color:#006400;
+      font-family: "Arial Black";
+      font-size: 20px ;
+      line-height:25px;
+      text-align:center;
+       }
+       
+    table, th, td 
+      {
+        margin:0px 5px;
+        /*border:solid 1px #333; */
+        padding:2px 4px;
+        font:10px Verdana;
+      }
+    th {
+        font-size:14px;
+        font-weight:bold
+      }
+    td {
+        font-size:14px;
+        font-weight:normal
+      }
+    tr {
+        background: white;
+      }
+      
+    tbody  tr:hover {
+        background: yellow;
+      }
+    table {
+        border-collapse: collapse;
+      }  
+    .table a
+    {
+        display:block;
+        text-decoration:none;
+    }
+    #f1{
+      font-weight:bold
+    }
+    .p2 {
+        font-size: 24px;
+      font-weight:bold;
+        position: relative;
+        top: 11px;
+      left: 20px;
+    }
+    </style>
+
+</head>
+
+
+<body>
+  <div id="wrapper1">
+    <div id="panel1"><span class="p2">Demo</span> </div>
+    <div id="map1">  </div>
+    
+    <div class="sidebar1">
+  <p style="text-align:center; font-size: 24px; color:#175B81; font-weight:bold; "> Baseball</p>	 
+        <table  style="width:90%; ">
+        <tr>
+        <td id='pict' ALIGN='center'; >	</td>
+        <td id='pict2' ALIGN='center';>	</td>
+        </tr>
+        </table></br> </br>
+        
+        <table  style="width:90%">
+          <tr>
+                <th align="left">League</th>
+                <td id='f1'></td>
+                </tr> <tr>
+                <th align="left">Team</th>
+                <td id='f2'></td></tr>
+                <tr>
+         <th align="left">Address</th>
+                <td id='f3'></td>
+                </tr> <tr>
+          <th align="left">Stadium</th>
+                <td id='f4'></td>
+                </tr> <tr>
+                <th align="left">Capacity</th>
+                <td id='f5'></td></tr>
+                <tr>
+          <th align="left">Website</th>
+                <td id='f6'><a href="#"></a></td>
+                 </table>
+    </div>
+    <div id="footer1">  </div>
+    
+  </div>
+
+
+
+
+  <script>
+    var url = 'baseball.json';  
+    
+      var map = L.map('map').setView([39.0, -98.26], 4); 
+    
+      var osm=new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',{ 
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'});
+      
+      // https: also suppported.
+      var Esri_WorldImagery = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+      });
+      
+      // https: also suppported.
+      var Esri_WorldGrayCanvas = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+        maxZoom: 16
+      }).addTo(map);;
+      
+      
+      // https: also suppported.
+      var Stamen_TopOSMFeatures = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toposm-features/{z}/{x}/{y}.{ext}', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        subdomains: 'abcd',
+        minZoom: 0,
+        maxZoom: 20,
+        ext: 'png',
+        bounds: [[22, -132], [51, -56]],
+        opacity: 0.9
+      });
+      
+      var OpenStreetMap_BlackAndWhite = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      });
+      //OpenStreetMap_BlackAndWhite.addTo(map);
+      
+      var blue = L.layerGroup([
+            Esri_WorldGrayCanvas,
+        Stamen_TopOSMFeatures
+        ]); 
+    
+      // Set function for color ramp
+      function getColor(league){
+        return league == 'NL' ? 'blue' :
+             league == 'AL' ? 'red' :
+                    'white';
+             }	
+      
+      // Set style function that sets fill color property
+      function style(feature) {
+        return {
+          fillColor: setColor(feature.properties.League),
+          fillOpacity: 0.5,
+          weight: 2,
+          opacity: 1,
+          color: '#ffffff',
+          dashArray: '3'
+        };
+      }
+    
+      var bbTeam;	
+        
+    // Get GeoJSON data and create features.
+      $.getJSON(url, function(data) {
+      
+            bbTeam = L.geoJson(data, {
+          
+                pointToLayer: function(feature, latlng) {
+        
+            return L.circleMarker(latlng, {
+            radius:6,
+            opacity: .5,
+            //color: "#000",
+            color:getColor(feature.properties.League),
+            fillColor:  getColor(feature.properties.League),
+            fillOpacity: 0.8
+    
+            }).bindTooltip(feature.properties.Name);
+                },
+            onEachFeature: function (feature, layer) {
+            
+                layer.on('click', function (e) {
+     
+                  // get coordinates from GeoJSON
+                  var coords = e.target.feature.geometry.coordinates
+                  //pass coords to function to create marker.(Yellow circle)
+                  onMapClick(coords);
+                  
+                  //place attributes in panel table.
+                    var fieldA=document.getElementById('pict');
+                    fieldA.innerHTML='<img src="' +e.target.feature.properties.Logo +'">';
+                    // var fieldB=document.getElementById('pict2');
+                    // fieldB.innerHTML='<img src="' +e.target.feature.properties.LeagueLogo +'">';
+                    
+                    var field1=document.getElementById('f1');
+                    field1.innerHTML=e.target.feature.properties.League;
+                    var field2=document.getElementById('f2');
+                    field2.innerHTML=e.target.feature.properties.Team;
+                    var field3=document.getElementById('f3');
+                    field3.innerHTML=e.target.feature.properties.Address;
+                    var field4=document.getElementById('f4');
+                    field4.innerHTML=e.target.feature.properties.Stadium;
+                    var field5=document.getElementById('f5');
+                    field5.innerHTML=e.target.feature.properties.Capacity;
+                    var field6=document.getElementById('f6');
+                    var wsite = e.target.feature.properties.Website;
+                    if (wsite !== null){ 
+                    field6.innerHTML ='<a href="'+ wsite +'" target="_blank">website</a>' ;
+                    } else{
+                    field6.innerHTML = 'No site recorded';
+                    }
+                });
+    
+            }
+            }).addTo(map);
+            });
+      
+      
+    
+    // click marker
+      var clickmark;
+    
+      // When you click on a circle, it calls the onMapClick function and passes the layers coordinates.
+      // I grab the coords which are X,Y, and I need to flip them to latLng for a marker,  
+      function onMapClick(coords) {
+        console.log(coords);
+        var thecoords = coords.toString().split(',');
+        var lat = thecoords[1];
+        var lng = thecoords[0];
+        //if prior marker exists, remove it.
+        if (clickmark != undefined) {
+          map.removeLayer(clickmark);
+        };
+      
+         clickmark = L.circleMarker([lat,lng],{
+          radius: 8,
+          color: "yellow",
+          fillColor:  "yellow",
+          fillOpacity: 0.8}
+         ).addTo(map);
+      }
+    // end of code for click marker.
+    
+    
+    
+    //Add layer control
+    var baseMaps = {
+        "Open Street Map": osm,
+        "Imagery":Esri_WorldImagery,
+      "Gray":Esri_WorldGrayCanvas,
+      "Blue Base":blue,
+      "OSM B&W":OpenStreetMap_BlackAndWhite
+    };
+    
+    var overlayMaps = {};
+    L.control.layers(baseMaps, overlayMaps).addTo(map);
+    
+     </script>
+</body>
+</html>
